@@ -1,0 +1,3871 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html dir="ltr" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html">
+    <title>CA ERwin Report Designer - Report for Entity Document </title>
+
+    <style>
+        table.datagrid
+        {
+            font: normal 76%/150% "Lucida Grande" , "Lucida Sans Unicode" , Verdana, Arial, Helvetica, sans-serif;
+            border-collapse: separate;
+            border-spacing: 0;
+            margin: 0 0 1em;
+            color: #000;
+        }
+        table.datagrid a
+        {
+            color: #523A0B;
+            text-decoration: none;
+            border-bottom: 1px dotted;
+        }
+        table.datagrid a:visited
+        {
+            color: #444;
+            font-weight: normal;
+        }
+        table.datagrid a:visited:after
+        {
+            content: "\00A0\221A";
+        }
+        table.datagrid a:hover
+        {
+            border-bottom-style: solid;
+        }
+        thead th, thead td, tfoot th, tfoot td
+        {
+            border: 1px solid #523A0B;
+            border-width: 1px 0;
+            background: #EBE5D9;
+        }
+        table.datagrid th
+        {
+            font-weight: bold;
+            line-height: normal;
+            padding: 0.25em 0.5em;
+            text-align: left;
+        }
+        table.datagrid tbody th, td
+        {
+            padding: 0.25em 0.5em;
+            text-align: left;
+            vertical-align: top;
+        }
+        table.datagrid tbody th
+        {
+            font-weight: normal;
+            white-space: nowrap;
+        }
+        table.datagrid tbody td a:link
+        {
+            color: #0000FF;
+        }
+        table.datagrid tbody th a:link tbody th a:visited
+        {
+            font-weight: bold;
+        }
+        table.datagrid tbody td, tbody th
+        {
+            border: 1px solid #fff;
+            border-width: 1px 0;
+        }
+        table.datagrid tbody tr.odd th, tbody tr.odd td
+        {
+            border-color: #EBE5D9;
+            background: #F7F4EE;
+        }
+        table.datagrid tbody tr:hover td, tbody tr:hover th
+        {
+            background: #ffffee;
+            border-color: #523A0B;
+        }
+
+        caption
+        {
+            font-family: Georgia,Times,serif;
+            font-weight: normal;
+            font-size: 1.4em;
+            text-align: left;
+            margin: 0;
+            padding: 0.5em 0.25em;
+        }
+        
+        #menu ul
+        {
+            margin: 0px;
+            padding: 0px;
+            list-style-type: none;
+        }
+
+        .CurrentA
+        {
+            display: block;
+            width: 8em;
+            color: white;
+            background-color: #000099;
+            text-decoration: none;
+            text-align: center;
+        }
+        .NormalA
+        {
+            display: block;
+            width: 8em;
+            color: white;
+            background-color: #C0C0C0;
+            text-decoration: none;
+            text-align: center;
+        }
+        
+        #menu a:hover
+        {
+            background-color: #008000;
+        }
+        #menu li
+        {
+            float: left;
+            margin-right: 0.5em;
+        }
+    </style>
+</head>
+<body>
+    <div id="boundary">
+        <div id="content">
+            <table id="theReport" cellpading="1" border="2" align="center">
+                <tr>
+                    <td align="center" valign="middle">
+                        <b><font size="5" color="#000000" face='Times New Roman'>Subject Area : CLIENT LOCATION</font></b>
+                    </td>
+                </tr>
+            </table>
+            <div id="menu" style="float: right">
+                <ul>
+                    <li>Select Format:</li>
+                    <li><a href="tabular.htm" class="CurrentA">Tabular</a></li>
+                    <li><a href="hierarchical.htm" class="NormalA">Hierarchical</a></li>
+                </ul>
+            </div>
+            <table id="theheader" cellpading="0" border="0" width="100%">
+                <tr>
+                    <td align="LEFT" valign="TOP" width="100%">
+                        <b><font size="4" face='Times New Roman'></font></b>
+                    </td>
+                </tr>
+            </table>
+            <div id="itsthetable">
+                
+                <a name="Link_Entity_1"></a>
+                <table class='datagrid' summary="ReportData" width="100%" style="">
+                    <caption>Entity(s) of Model &quot;LightHouse_MDM&quot;</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col" width="20">
+                              # 
+                            </th>
+                            
+                            <th scope="col" style="" >
+                                Name
+                            </th>
+                            
+                            <th scope="col" style="" >
+                                Definition
+                            </th>
+                            
+                            <th scope="col" style="" >
+                                Logical Only
+                            </th>
+                            
+                            <th scope="col" style="" >
+                                Attribute
+                            </th>
+                            
+                            <th scope="col" style="" >
+                                Key Group
+                            </th>
+                            
+                            <th scope="col" style="" >
+                                Child Relationship
+                            </th>
+                            
+                            <th scope="col" style="" >
+                                Parent Relationship
+                            </th>
+                            
+                        </tr>
+                    </thead>
+                    <tfoot>
+                        <tr>
+                            <th scope="row">Total</th>
+                            <td colspan="50">1</td>
+                        </tr>
+                    </tfoot>
+                    <tbody>
+                        
+                        <tr>
+                            <th scope="col">
+                               . 
+                            </th>
+                            
+                            <td style="">
+                                CLIENT LOCATION
+                                
+                            </td>
+                            
+                            <td style="">
+                                
+                                
+                                    
+                                    A portion of a Physical building for the respective client. The Client Location may represent the entire or a portion of a Physical location.  <br>
+                                
+                                    
+                                     <br>
+                                
+                            </td>
+                            
+                            <td style="">
+                                
+                                
+                            </td>
+                            
+                            
+                            <td>
+                                <a href=#Link_Attribute_599>Details..</a>
+                            </td>
+                            
+                            <td>
+                                <a href=#Link_Key_Group_599>Details..</a>
+                            </td>
+                            
+                            <td>
+                                <a href=#Link_Child_Relationship_599>Details..</a>
+                            </td>
+                            
+                            <td>
+                                <a href=#Link_Parent_Relationship_599>Details..</a>
+                            </td>
+                            
+                        </tr>
+                        
+                     </tbody>
+                </table>
+                
+                <a name="Link_Attribute_599"></a>
+                <table class='datagrid' summary="ReportData" width="100%" style="">
+                    <caption>Attribute(s) of Entity &quot;CLIENT LOCATION&quot;</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col" width="20">
+                              # 
+                            </th>
+                            
+                            <th scope="col" style="" >
+                                Name
+                            </th>
+                            
+                            <th scope="col" style="" >
+                                Definition
+                            </th>
+                            
+                            <th scope="col" style="" >
+                                Is FK
+                            </th>
+                            
+                            <th scope="col" style="" >
+                                Is PK
+                            </th>
+                            
+                            <th scope="col" style="" >
+                                Logical Only
+                            </th>
+                            
+                            <th scope="col" style="" >
+                                Logical Data Type
+                            </th>
+                            
+                            <th scope="col" style="" >
+                                Note List
+                            </th>
+                            
+                            <th scope="col" style="" >
+                                Null Option
+                            </th>
+                            
+                            <th scope="col" style="" >
+                                Check Constraint Usage
+                            </th>
+                            
+                            <th scope="col" style="" >
+                                Default Constraint Usage
+                            </th>
+                            
+                        </tr>
+                    </thead>
+                    <tfoot>
+                        <tr>
+                            <th scope="row">Total</th>
+                            <td colspan="50">39</td>
+                        </tr>
+                    </tfoot>
+                    <tbody>
+                        
+                        <tr>
+                            <th scope="col">
+                               . 
+                            </th>
+                            
+                            <td style="">
+                                CLIENT LOCATION IDENTITY
+                                
+                            </td>
+                            
+                            <td style="">
+                                
+                                
+                            </td>
+                            
+                            <td style="">
+                                false
+                                
+                            </td>
+                            
+                            <td style="">
+                                true
+                                
+                            </td>
+                            
+                            <td style="">
+                                
+                                
+                            </td>
+                            
+                            <td style="">
+                                INTEGER
+                                
+                            </td>
+                            
+                            <td style="">
+                                
+                                
+                            </td>
+                            
+                            <td style="">
+                                Not Null
+                                
+                            </td>
+                            
+                            
+                            <td>
+                                <a href=#Link_Check_Constraint_Usage_3234>Details..</a>
+                            </td>
+                            
+                            <td>
+                                <a href=#Link_Default_Constraint_Usage_3234>Details..</a>
+                            </td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <th scope="col">
+                               . 
+                            </th>
+                            
+                            <td style="">
+                                PHYSICAL LOCATION IDENTITY
+                                
+                            </td>
+                            
+                            <td style="">
+                                
+                                
+                                    
+                                    A Physical Location represents a physical building/site enclosure. Any attached land most likely would be setup as a separate Physical Location.  <br>
+                                
+                                    
+                                     <br>
+                                
+                            </td>
+                            
+                            <td style="">
+                                true
+                                
+                            </td>
+                            
+                            <td style="">
+                                false
+                                
+                            </td>
+                            
+                            <td style="">
+                                
+                                
+                            </td>
+                            
+                            <td style="">
+                                HUGE
+                                
+                            </td>
+                            
+                            <td style="">
+                                
+                                
+                            </td>
+                            
+                            <td style="">
+                                Not Null
+                                
+                            </td>
+                            
+                            
+                            <td>
+                                <a href=#Link_Check_Constraint_Usage_2348>Details..</a>
+                            </td>
+                            
+                            <td>
+                                <a href=#Link_Default_Constraint_Usage_2348>Details..</a>
+                            </td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <th scope="col">
+                               . 
+                            </th>
+                            
+                            <td style="">
+                                ENVIRONMENTCONDITION
+                                
+                            </td>
+                            
+                            <td style="">
+                                
+                                
+                                    
+                                    Represents whether any environmental hazards exist within the Client Location portion of the Physical Structure such as Asbestos, Mould, etc. and will serve as a general warning about the Client Location space. As this will be inherited from the Physical Location and overridable within the Client Location, if a Client remedies there hazards within their space but not the remaining portion of the Physical Location space will enable this segregation.  <br>
+                                
+                                    
+                                     <br>
+                                
+                            </td>
+                            
+                            <td style="">
+                                false
+                                
+                            </td>
+                            
+                            <td style="">
+                                false
+                                
+                            </td>
+                            
+                            <td style="">
+                                
+                                
+                            </td>
+                            
+                            <td style="">
+                                CHAR
+                                
+                            </td>
+                            
+                            <td style="">
+                                
+                                
+                            </td>
+                            
+                            <td style="">
+                                Null
+                                
+                            </td>
+                            
+                            
+                            <td>
+                                <a href=#Link_Check_Constraint_Usage_3416>Details..</a>
+                            </td>
+                            
+                            <td>
+                                <a href=#Link_Default_Constraint_Usage_3416>Details..</a>
+                            </td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <th scope="col">
+                               . 
+                            </th>
+                            
+                            <td style="">
+                                CLIENT IDENTITY
+                                
+                            </td>
+                            
+                            <td style="">
+                                System generated
+                                
+                            </td>
+                            
+                            <td style="">
+                                true
+                                
+                            </td>
+                            
+                            <td style="">
+                                false
+                                
+                            </td>
+                            
+                            <td style="">
+                                
+                                
+                            </td>
+                            
+                            <td style="">
+                                INTEGER
+                                
+                            </td>
+                            
+                            <td style="">
+                                
+                                
+                            </td>
+                            
+                            <td style="">
+                                Not Null
+                                
+                            </td>
+                            
+                            
+                            <td>
+                                <a href=#Link_Check_Constraint_Usage_649>Details..</a>
+                            </td>
+                            
+                            <td>
+                                <a href=#Link_Default_Constraint_Usage_649>Details..</a>
+                            </td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <th scope="col">
+                               . 
+                            </th>
+                            
+                            <td style="">
+                                CLIENT LOCATION STATUS IDENTITY
+                                
+                            </td>
+                            
+                            <td style="">
+                                
+                                
+                                    
+                                    The status of the Client Location. Existing represents a Draft location (just captured as a place holder but not usable anywhere else in RealSuite), Planned location (a hypothetical location which either exists physically but not yet Active/Occupied by the Client OR a location under construction but not yet Active/Occupied by the Client), Active location (a location both Active from a business occupant perspective and Occupied by the client), Inactive location (a location which may still be under lease/owned by the client but not Occupied or Active from a business occupant perspective, workorders and work can still be conducted as the Client still has liability for the location), Pending Closure location (a site under it&#39;s closure procedure for which workorders can not be leveraged but believe Leases, Utilities and Projects can still be issued), and Closed location (no longer usable business wise and which work can not be conducted against).  <br>
+                                
+                                    
+                                     <br>
+                                
+                            </td>
+                            
+                            <td style="">
+                                true
+                                
+                            </td>
+                            
+                            <td style="">
+                                false
+                                
+                            </td>
+                            
+                            <td style="">
+                                
+                                
+                            </td>
+                            
+                            <td style="">
+                                INTEGER
+                                
+                            </td>
+                            
+                            <td style="">
+                                
+                                
+                            </td>
+                            
+                            <td style="">
+                                Not Null
+                                
+                            </td>
+                            
+                            
+                            <td>
+                                <a href=#Link_Check_Constraint_Usage_3636>Details..</a>
+                            </td>
+                            
+                            <td>
+                                <a href=#Link_Default_Constraint_Usage_3636>Details..</a>
+                            </td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <th scope="col">
+                               . 
+                            </th>
+                            
+                            <td style="">
+                                CLIENT LOCATION NAME
+                                
+                            </td>
+                            
+                            <td style="">
+                                
+                                
+                                    
+                                    Represents the name of the Client Location. This may or may not be the same name as that of the Client Location residing within this Physical Location, ie. Eatons Centre.  <br>
+                                
+                                    
+                                     <br>
+                                
+                            </td>
+                            
+                            <td style="">
+                                false
+                                
+                            </td>
+                            
+                            <td style="">
+                                false
+                                
+                            </td>
+                            
+                            <td style="">
+                                
+                                
+                            </td>
+                            
+                            <td style="">
+                                NVARCHAR(50)
+                                
+                            </td>
+                            
+                            <td style="">
+                                
+                                
+                            </td>
+                            
+                            <td style="">
+                                Not Null
+                                
+                            </td>
+                            
+                            
+                            <td>
+                                <a href=#Link_Check_Constraint_Usage_654>Details..</a>
+                            </td>
+                            
+                            <td>
+                                <a href=#Link_Default_Constraint_Usage_654>Details..</a>
+                            </td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <th scope="col">
+                               . 
+                            </th>
+                            
+                            <td style="">
+                                LOCATION FINANCE CODE
+                                
+                            </td>
+                            
+                            <td style="">
+                                
+                                
+                                    
+                                    Represents the Financial Code reference for this client/virtual location.  <br>
+                                
+                                    
+                                    Client&#39;s Location Code  <br>
+                                
+                                    
+                                     <br>
+                                
+                            </td>
+                            
+                            <td style="">
+                                false
+                                
+                            </td>
+                            
+                            <td style="">
+                                false
+                                
+                            </td>
+                            
+                            <td style="">
+                                
+                                
+                            </td>
+                            
+                            <td style="">
+                                NVARCHAR(20)
+                                
+                            </td>
+                            
+                            <td style="">
+                                
+                                
+                            </td>
+                            
+                            <td style="">
+                                Null
+                                
+                            </td>
+                            
+                            
+                            <td>
+                                <a href=#Link_Check_Constraint_Usage_3417>Details..</a>
+                            </td>
+                            
+                            <td>
+                                <a href=#Link_Default_Constraint_Usage_3417>Details..</a>
+                            </td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <th scope="col">
+                               . 
+                            </th>
+                            
+                            <td style="">
+                                LOCATION OPERATIONAL CODE
+                                
+                            </td>
+                            
+                            <td style="">
+                                
+                                
+                                    
+                                    Represents the client&#39;s operational code refererence, like a transit #, for this ciste  <br>
+                                
+                                    
+                                    BJCC Internal Location Code (Building_ID in legacy table)  <br>
+                                
+                                    &nbsp;
+                                     <br>
+                                
+                                    
+                                     <br>
+                                
+                            </td>
+                            
+                            <td style="">
+                                false
+                                
+                            </td>
+                            
+                            <td style="">
+                                false
+                                
+                            </td>
+                            
+                            <td style="">
+                                
+                                
+                            </td>
+                            
+                            <td style="">
+                                NVARCHAR(10)
+                                
+                            </td>
+                            
+                            <td style="">
+                                
+                                
+                            </td>
+                            
+                            <td style="">
+                                Null
+                                
+                            </td>
+                            
+                            
+                            <td>
+                                <a href=#Link_Check_Constraint_Usage_3418>Details..</a>
+                            </td>
+                            
+                            <td>
+                                <a href=#Link_Default_Constraint_Usage_3418>Details..</a>
+                            </td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <th scope="col">
+                               . 
+                            </th>
+                            
+                            <td style="">
+                                RENTABLE AREA
+                                
+                            </td>
+                            
+                            <td style="">
+                                
+                                
+                                    
+                                    Represents the cumulative rented (lease contract) area for the Client Location and all leases falling under it. If the Client Location is Owned represents the structures area on the respective property.  <br>
+                                
+                                    
+                                     <br>
+                                
+                            </td>
+                            
+                            <td style="">
+                                false
+                                
+                            </td>
+                            
+                            <td style="">
+                                false
+                                
+                            </td>
+                            
+                            <td style="">
+                                
+                                
+                            </td>
+                            
+                            <td style="">
+                                NUMERIC(12,2)
+                                
+                            </td>
+                            
+                            <td style="">
+                                
+                                
+                            </td>
+                            
+                            <td style="">
+                                Null
+                                
+                            </td>
+                            
+                            
+                            <td>
+                                <a href=#Link_Check_Constraint_Usage_658>Details..</a>
+                            </td>
+                            
+                            <td>
+                                <a href=#Link_Default_Constraint_Usage_658>Details..</a>
+                            </td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <th scope="col">
+                               . 
+                            </th>
+                            
+                            <td style="">
+                                LEASED RENTABLE AREA
+                                
+                            </td>
+                            
+                            <td style="">
+                                
+                                
+                                    
+                                    Represents the cumulative spaced by which the tenants/occupants can utilize for their business. It is assumed that Usable cannot exceed Rentable. o Defined by BOMA standard and certified by an architect. In case of a building owned by a client, the building itself should have architect certificate for its Rentable Area (Building &amp; Floor Rentable Areas). If such certificate does not exist, it could be requested / acquired. The field to hold this information is important and must be present. The logic for owned buildings should be such that it could be entered directly and cannot be overwritten by leases (a client might have a 3rd party renting the space, while the rest of the building is still occupied by the client).  <br>
+                                
+                                    
+                                     <br>
+                                
+                            </td>
+                            
+                            <td style="">
+                                false
+                                
+                            </td>
+                            
+                            <td style="">
+                                false
+                                
+                            </td>
+                            
+                            <td style="">
+                                
+                                
+                            </td>
+                            
+                            <td style="">
+                                DECIMAL(12,2)
+                                
+                            </td>
+                            
+                            <td style="">
+                                
+                                
+                            </td>
+                            
+                            <td style="">
+                                Null
+                                
+                            </td>
+                            
+                            
+                            <td>
+                                <a href=#Link_Check_Constraint_Usage_3419>Details..</a>
+                            </td>
+                            
+                            <td>
+                                <a href=#Link_Default_Constraint_Usage_3419>Details..</a>
+                            </td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <th scope="col">
+                               . 
+                            </th>
+                            
+                            <td style="">
+                                OFFICE SPACE
+                                
+                            </td>
+                            
+                            <td style="">
+                                
+                                
+                                    
+                                    Represents floor area of client location that is conditioned space (i.e. heated and cooled).  Usually is the same the Building Rentable Area.  This floor area, if non-zero, is used for energy intensity (BEPI) calculations  <br>
+                                
+                                    
+                                     <br>
+                                
+                            </td>
+                            
+                            <td style="">
+                                false
+                                
+                            </td>
+                            
+                            <td style="">
+                                false
+                                
+                            </td>
+                            
+                            <td style="">
+                                
+                                
+                            </td>
+                            
+                            <td style="">
+                                DECIMAL(12,2)
+                                
+                            </td>
+                            
+                            <td style="">
+                                
+                                
+                            </td>
+                            
+                            <td style="">
+                                Null
+                                
+                            </td>
+                            
+                            
+                            <td>
+                                <a href=#Link_Check_Constraint_Usage_3420>Details..</a>
+                            </td>
+                            
+                            <td>
+                                <a href=#Link_Default_Constraint_Usage_3420>Details..</a>
+                            </td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <th scope="col">
+                               . 
+                            </th>
+                            
+                            <td style="">
+                                CLIENT OWNERSHIP
+                                
+                            </td>
+                            
+                            <td style="">
+                                
+                                
+                                    
+                                    Represnts the Ownership of the Client Location, ie. Owned (completely owned structure), Leased (all space within the structure is leased by the client from a 3rd party)  <br>
+                                
+                                    
+                                    Owership (links to RealProperty Lookup table, TYPECLASS=OWNERSHIP)  <br>
+                                
+                                    
+                                     <br>
+                                
+                            </td>
+                            
+                            <td style="">
+                                false
+                                
+                            </td>
+                            
+                            <td style="">
+                                false
+                                
+                            </td>
+                            
+                            <td style="">
+                                
+                                
+                            </td>
+                            
+                            <td style="">
+                                INTEGER
+                                
+                            </td>
+                            
+                            <td style="">
+                                
+                                
+                            </td>
+                            
+                            <td style="">
+                                Null
+                                
+                            </td>
+                            
+                            
+                            <td>
+                                <a href=#Link_Check_Constraint_Usage_3421>Details..</a>
+                            </td>
+                            
+                            <td>
+                                <a href=#Link_Default_Constraint_Usage_3421>Details..</a>
+                            </td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <th scope="col">
+                               . 
+                            </th>
+                            
+                            <td style="">
+                                PRIMARY USAGE
+                                
+                            </td>
+                            
+                            <td style="">
+                                
+                                
+                                    
+                                    Represents what the Client Location is primarily used for operationally.  <br>
+                                
+                                    
+                                    Primary Usage (links to RealProperty lookup table, TYPECLASS=RPRO.PROP_USE)  <br>
+                                
+                                    &nbsp;
+                                     <br>
+                                
+                                    
+                                     <br>
+                                
+                            </td>
+                            
+                            <td style="">
+                                false
+                                
+                            </td>
+                            
+                            <td style="">
+                                false
+                                
+                            </td>
+                            
+                            <td style="">
+                                
+                                
+                            </td>
+                            
+                            <td style="">
+                                INTEGER
+                                
+                            </td>
+                            
+                            <td style="">
+                                
+                                
+                            </td>
+                            
+                            <td style="">
+                                Null
+                                
+                            </td>
+                            
+                            
+                            <td>
+                                <a href=#Link_Check_Constraint_Usage_3422>Details..</a>
+                            </td>
+                            
+                            <td>
+                                <a href=#Link_Default_Constraint_Usage_3422>Details..</a>
+                            </td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <th scope="col">
+                               . 
+                            </th>
+                            
+                            <td style="">
+                                INTERIOR PARKING STALL
+                                
+                            </td>
+                            
+                            <td style="">
+                                
+                                
+                                    
+                                    Number of Interior parking stalls  <br>
+                                
+                                    
+                                     <br>
+                                
+                            </td>
+                            
+                            <td style="">
+                                false
+                                
+                            </td>
+                            
+                            <td style="">
+                                false
+                                
+                            </td>
+                            
+                            <td style="">
+                                
+                                
+                            </td>
+                            
+                            <td style="">
+                                INTEGER
+                                
+                            </td>
+                            
+                            <td style="">
+                                
+                                
+                            </td>
+                            
+                            <td style="">
+                                Null
+                                
+                            </td>
+                            
+                            
+                            <td>
+                                <a href=#Link_Check_Constraint_Usage_3423>Details..</a>
+                            </td>
+                            
+                            <td>
+                                <a href=#Link_Default_Constraint_Usage_3423>Details..</a>
+                            </td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <th scope="col">
+                               . 
+                            </th>
+                            
+                            <td style="">
+                                EXTERIOR PARKING STALL
+                                
+                            </td>
+                            
+                            <td style="">
+                                
+                                
+                                    
+                                    Number of Exterior parking stalls  <br>
+                                
+                                    
+                                     <br>
+                                
+                            </td>
+                            
+                            <td style="">
+                                false
+                                
+                            </td>
+                            
+                            <td style="">
+                                false
+                                
+                            </td>
+                            
+                            <td style="">
+                                
+                                
+                            </td>
+                            
+                            <td style="">
+                                INTEGER
+                                
+                            </td>
+                            
+                            <td style="">
+                                
+                                
+                            </td>
+                            
+                            <td style="">
+                                Null
+                                
+                            </td>
+                            
+                            
+                            <td>
+                                <a href=#Link_Check_Constraint_Usage_3425>Details..</a>
+                            </td>
+                            
+                            <td>
+                                <a href=#Link_Default_Constraint_Usage_3425>Details..</a>
+                            </td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <th scope="col">
+                               . 
+                            </th>
+                            
+                            <td style="">
+                                INTERIOR HANDICAP PARKING STALL
+                                
+                            </td>
+                            
+                            <td style="">
+                                
+                                
+                                    
+                                    Number of Interior Handicap parking stalls  <br>
+                                
+                                    
+                                     <br>
+                                
+                            </td>
+                            
+                            <td style="">
+                                false
+                                
+                            </td>
+                            
+                            <td style="">
+                                false
+                                
+                            </td>
+                            
+                            <td style="">
+                                
+                                
+                            </td>
+                            
+                            <td style="">
+                                INTEGER
+                                
+                            </td>
+                            
+                            <td style="">
+                                
+                                
+                            </td>
+                            
+                            <td style="">
+                                Null
+                                
+                            </td>
+                            
+                            
+                            <td>
+                                <a href=#Link_Check_Constraint_Usage_3424>Details..</a>
+                            </td>
+                            
+                            <td>
+                                <a href=#Link_Default_Constraint_Usage_3424>Details..</a>
+                            </td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <th scope="col">
+                               . 
+                            </th>
+                            
+                            <td style="">
+                                WORKPLACE ACCESS
+                                
+                            </td>
+                            
+                            <td style="">
+                                
+                                
+                                    
+                                    Workplace Access (links to RealProperty Lookup table, TYPECLASS=WORKPLACEACCESS)  <br>
+                                
+                                    
+                                     <br>
+                                
+                            </td>
+                            
+                            <td style="">
+                                false
+                                
+                            </td>
+                            
+                            <td style="">
+                                false
+                                
+                            </td>
+                            
+                            <td style="">
+                                
+                                
+                            </td>
+                            
+                            <td style="">
+                                INTEGER
+                                
+                            </td>
+                            
+                            <td style="">
+                                
+                                
+                            </td>
+                            
+                            <td style="">
+                                Null
+                                
+                            </td>
+                            
+                            
+                            <td>
+                                <a href=#Link_Check_Constraint_Usage_3426>Details..</a>
+                            </td>
+                            
+                            <td>
+                                <a href=#Link_Default_Constraint_Usage_3426>Details..</a>
+                            </td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <th scope="col">
+                               . 
+                            </th>
+                            
+                            <td style="">
+                                WORKPLACE ACCESS REASON
+                                
+                            </td>
+                            
+                            <td style="">
+                                
+                                
+                                    
+                                    Workplace access Reason  <br>
+                                
+                                    
+                                     <br>
+                                
+                            </td>
+                            
+                            <td style="">
+                                false
+                                
+                            </td>
+                            
+                            <td style="">
+                                false
+                                
+                            </td>
+                            
+                            <td style="">
+                                
+                                
+                            </td>
+                            
+                            <td style="">
+                                NVARCHAR(50)
+                                
+                            </td>
+                            
+                            <td style="">
+                                
+                                
+                            </td>
+                            
+                            <td style="">
+                                Null
+                                
+                            </td>
+                            
+                            
+                            <td>
+                                <a href=#Link_Check_Constraint_Usage_3427>Details..</a>
+                            </td>
+                            
+                            <td>
+                                <a href=#Link_Default_Constraint_Usage_3427>Details..</a>
+                            </td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <th scope="col">
+                               . 
+                            </th>
+                            
+                            <td style="">
+                                COUNTER ACCESS
+                                
+                            </td>
+                            
+                            <td style="">
+                                
+                                
+                                    
+                                    Counter Access (links to RealProperty Lookup table, TYPECLASS=COUNTERACCESS)  <br>
+                                
+                                    
+                                     <br>
+                                
+                            </td>
+                            
+                            <td style="">
+                                false
+                                
+                            </td>
+                            
+                            <td style="">
+                                false
+                                
+                            </td>
+                            
+                            <td style="">
+                                
+                                
+                            </td>
+                            
+                            <td style="">
+                                INTEGER
+                                
+                            </td>
+                            
+                            <td style="">
+                                
+                                
+                            </td>
+                            
+                            <td style="">
+                                Null
+                                
+                            </td>
+                            
+                            
+                            <td>
+                                <a href=#Link_Check_Constraint_Usage_3428>Details..</a>
+                            </td>
+                            
+                            <td>
+                                <a href=#Link_Default_Constraint_Usage_3428>Details..</a>
+                            </td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <th scope="col">
+                               . 
+                            </th>
+                            
+                            <td style="">
+                                COUNTER ACCESS REASON
+                                
+                            </td>
+                            
+                            <td style="">
+                                
+                                
+                            </td>
+                            
+                            <td style="">
+                                false
+                                
+                            </td>
+                            
+                            <td style="">
+                                false
+                                
+                            </td>
+                            
+                            <td style="">
+                                
+                                
+                            </td>
+                            
+                            <td style="">
+                                NVARCHAR(50)
+                                
+                            </td>
+                            
+                            <td style="">
+                                
+                                
+                            </td>
+                            
+                            <td style="">
+                                Null
+                                
+                            </td>
+                            
+                            
+                            <td>
+                                <a href=#Link_Check_Constraint_Usage_3429>Details..</a>
+                            </td>
+                            
+                            <td>
+                                <a href=#Link_Default_Constraint_Usage_3429>Details..</a>
+                            </td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <th scope="col">
+                               . 
+                            </th>
+                            
+                            <td style="">
+                                WASHROOM ACCESS
+                                
+                            </td>
+                            
+                            <td style="">
+                                
+                                
+                                    
+                                    Washroom Access (links to RealProperty Lookup table, TYPECLASS=WASHROOMACCESS)  <br>
+                                
+                                    
+                                     <br>
+                                
+                            </td>
+                            
+                            <td style="">
+                                false
+                                
+                            </td>
+                            
+                            <td style="">
+                                false
+                                
+                            </td>
+                            
+                            <td style="">
+                                
+                                
+                            </td>
+                            
+                            <td style="">
+                                INTEGER
+                                
+                            </td>
+                            
+                            <td style="">
+                                
+                                
+                            </td>
+                            
+                            <td style="">
+                                Null
+                                
+                            </td>
+                            
+                            
+                            <td>
+                                <a href=#Link_Check_Constraint_Usage_3430>Details..</a>
+                            </td>
+                            
+                            <td>
+                                <a href=#Link_Default_Constraint_Usage_3430>Details..</a>
+                            </td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <th scope="col">
+                               . 
+                            </th>
+                            
+                            <td style="">
+                                WASHROOM ACCESS REASON
+                                
+                            </td>
+                            
+                            <td style="">
+                                
+                                
+                            </td>
+                            
+                            <td style="">
+                                false
+                                
+                            </td>
+                            
+                            <td style="">
+                                false
+                                
+                            </td>
+                            
+                            <td style="">
+                                
+                                
+                            </td>
+                            
+                            <td style="">
+                                NVARCHAR(50)
+                                
+                            </td>
+                            
+                            <td style="">
+                                
+                                
+                            </td>
+                            
+                            <td style="">
+                                Null
+                                
+                            </td>
+                            
+                            
+                            <td>
+                                <a href=#Link_Check_Constraint_Usage_3431>Details..</a>
+                            </td>
+                            
+                            <td>
+                                <a href=#Link_Default_Constraint_Usage_3431>Details..</a>
+                            </td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <th scope="col">
+                               . 
+                            </th>
+                            
+                            <td style="">
+                                BUILDING JURISDICTION
+                                
+                            </td>
+                            
+                            <td style="">
+                                
+                                
+                                    
+                                    Building Jurisdiction (links to RealProperty Lookup table, TYPECLASS=RPRO.JURISDICTION)  <br>
+                                
+                                    
+                                     <br>
+                                
+                            </td>
+                            
+                            <td style="">
+                                false
+                                
+                            </td>
+                            
+                            <td style="">
+                                false
+                                
+                            </td>
+                            
+                            <td style="">
+                                
+                                
+                            </td>
+                            
+                            <td style="">
+                                INTEGER
+                                
+                            </td>
+                            
+                            <td style="">
+                                
+                                
+                            </td>
+                            
+                            <td style="">
+                                Null
+                                
+                            </td>
+                            
+                            
+                            <td>
+                                <a href=#Link_Check_Constraint_Usage_3432>Details..</a>
+                            </td>
+                            
+                            <td>
+                                <a href=#Link_Default_Constraint_Usage_3432>Details..</a>
+                            </td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <th scope="col">
+                               . 
+                            </th>
+                            
+                            <td style="">
+                                FMZ IDENTITY
+                                
+                            </td>
+                            
+                            <td style="">
+                                
+                                
+                                    
+                                    Represents the internal CBG grouping of locations under the management of a particular Facility/Property Manager.  <br>
+                                
+                                    
+                                     <br>
+                                
+                            </td>
+                            
+                            <td style="">
+                                true
+                                
+                            </td>
+                            
+                            <td style="">
+                                false
+                                
+                            </td>
+                            
+                            <td style="">
+                                
+                                
+                            </td>
+                            
+                            <td style="">
+                                INTEGER
+                                
+                            </td>
+                            
+                            <td style="">
+                                
+                                
+                            </td>
+                            
+                            <td style="">
+                                Not Null
+                                
+                            </td>
+                            
+                            
+                            <td>
+                                <a href=#Link_Check_Constraint_Usage_666>Details..</a>
+                            </td>
+                            
+                            <td>
+                                <a href=#Link_Default_Constraint_Usage_666>Details..</a>
+                            </td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <th scope="col">
+                               . 
+                            </th>
+                            
+                            <td style="">
+                                COMPANY IDENTITY
+                                
+                            </td>
+                            
+                            <td style="">
+                                
+                                
+                                    
+                                    It is believed that this field is used to represent the Client Company from a Leasing perspective and that without it being populated, if the client uses RealLease, the system will not work properly. Aug1414: Will keep this attribute for now due to foreign references with the leasing application. Will assess the need of this field going forward based upon discussions of existing 3 tier Entity-Company-Department relationship today.  <br>
+                                
+                                    
+                                     <br>
+                                
+                            </td>
+                            
+                            <td style="">
+                                false
+                                
+                            </td>
+                            
+                            <td style="">
+                                false
+                                
+                            </td>
+                            
+                            <td style="">
+                                
+                                
+                            </td>
+                            
+                            <td style="">
+                                INTEGER
+                                
+                            </td>
+                            
+                            <td style="">
+                                
+                                
+                            </td>
+                            
+                            <td style="">
+                                Null
+                                
+                            </td>
+                            
+                            
+                            <td>
+                                <a href=#Link_Check_Constraint_Usage_3433>Details..</a>
+                            </td>
+                            
+                            <td>
+                                <a href=#Link_Default_Constraint_Usage_3433>Details..</a>
+                            </td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <th scope="col">
+                               . 
+                            </th>
+                            
+                            <td style="">
+                                SITE IDENTITY
+                                
+                            </td>
+                            
+                            <td style="">
+                                
+                                
+                                    
+                                    Represents a logical grouping of Client Locations such as a University or Government Campus.  <br>
+                                
+                                    
+                                     <br>
+                                
+                            </td>
+                            
+                            <td style="">
+                                true
+                                
+                            </td>
+                            
+                            <td style="">
+                                false
+                                
+                            </td>
+                            
+                            <td style="">
+                                
+                                
+                            </td>
+                            
+                            <td style="">
+                                INTEGER
+                                
+                            </td>
+                            
+                            <td style="">
+                                
+                                
+                            </td>
+                            
+                            <td style="">
+                                Null
+                                
+                            </td>
+                            
+                            
+                            <td>
+                                <a href=#Link_Check_Constraint_Usage_3330>Details..</a>
+                            </td>
+                            
+                            <td>
+                                <a href=#Link_Default_Constraint_Usage_3330>Details..</a>
+                            </td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <th scope="col">
+                               . 
+                            </th>
+                            
+                            <td style="">
+                                STATUS REASON
+                                
+                            </td>
+                            
+                            <td style="">
+                                
+                                
+                                    
+                                    Captures notes related to change in status  <br>
+                                
+                                    
+                                     <br>
+                                
+                            </td>
+                            
+                            <td style="">
+                                false
+                                
+                            </td>
+                            
+                            <td style="">
+                                false
+                                
+                            </td>
+                            
+                            <td style="">
+                                
+                                
+                            </td>
+                            
+                            <td style="">
+                                NVARCHAR(255)
+                                
+                            </td>
+                            
+                            <td style="">
+                                
+                                
+                            </td>
+                            
+                            <td style="">
+                                Null
+                                
+                            </td>
+                            
+                            
+                            <td>
+                                <a href=#Link_Check_Constraint_Usage_3434>Details..</a>
+                            </td>
+                            
+                            <td>
+                                <a href=#Link_Default_Constraint_Usage_3434>Details..</a>
+                            </td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <th scope="col">
+                               . 
+                            </th>
+                            
+                            <td style="">
+                                OCCUPANCY STATUS
+                                
+                            </td>
+                            
+                            <td style="">
+                                
+                                
+                                    
+                                    Represents the current state of the occupancy of the Client Location as a whole. Unless all space under the Client Location has been Vacated, the Occupancy Status would be deemed Occupied, otherwise Vacant. Occupancy Status does not relate to solely tenants in the space but whether the space is being used for Operational Purposes, ie. if a Data Centre/IT Room is occupying part of the space within the Client Location regardless of any tenants occupying the space, this is still deemed Occupied.  <br>
+                                
+                                    &nbsp;
+                                     <br>
+                                
+                                    
+                                    Occupancy Status ID (links to RealProperty Lookup table, TYPECLASS=RPRO.OCCUPANCY_STATUS)  <br>
+                                
+                                    &nbsp;
+                                     <br>
+                                
+                                    
+                                     <br>
+                                
+                            </td>
+                            
+                            <td style="">
+                                false
+                                
+                            </td>
+                            
+                            <td style="">
+                                false
+                                
+                            </td>
+                            
+                            <td style="">
+                                
+                                
+                            </td>
+                            
+                            <td style="">
+                                INTEGER
+                                
+                            </td>
+                            
+                            <td style="">
+                                
+                                
+                            </td>
+                            
+                            <td style="">
+                                Null
+                                
+                            </td>
+                            
+                            
+                            <td>
+                                <a href=#Link_Check_Constraint_Usage_3435>Details..</a>
+                            </td>
+                            
+                            <td>
+                                <a href=#Link_Default_Constraint_Usage_3435>Details..</a>
+                            </td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <th scope="col">
+                               . 
+                            </th>
+                            
+                            <td style="">
+                                CREATEDBY
+                                
+                            </td>
+                            
+                            <td style="">
+                                
+                                
+                            </td>
+                            
+                            <td style="">
+                                false
+                                
+                            </td>
+                            
+                            <td style="">
+                                false
+                                
+                            </td>
+                            
+                            <td style="">
+                                
+                                
+                            </td>
+                            
+                            <td style="">
+                                NVARCHAR(50)
+                                
+                            </td>
+                            
+                            <td style="">
+                                
+                                
+                            </td>
+                            
+                            <td style="">
+                                Null
+                                
+                            </td>
+                            
+                            
+                            <td>
+                                <a href=#Link_Check_Constraint_Usage_3436>Details..</a>
+                            </td>
+                            
+                            <td>
+                                <a href=#Link_Default_Constraint_Usage_3436>Details..</a>
+                            </td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <th scope="col">
+                               . 
+                            </th>
+                            
+                            <td style="">
+                                CREATEDON
+                                
+                            </td>
+                            
+                            <td style="">
+                                
+                                
+                            </td>
+                            
+                            <td style="">
+                                false
+                                
+                            </td>
+                            
+                            <td style="">
+                                false
+                                
+                            </td>
+                            
+                            <td style="">
+                                
+                                
+                            </td>
+                            
+                            <td style="">
+                                DATETIME DAY TO SECOND
+                                
+                            </td>
+                            
+                            <td style="">
+                                
+                                
+                            </td>
+                            
+                            <td style="">
+                                Null
+                                
+                            </td>
+                            
+                            
+                            <td>
+                                <a href=#Link_Check_Constraint_Usage_3437>Details..</a>
+                            </td>
+                            
+                            <td>
+                                <a href=#Link_Default_Constraint_Usage_3437>Details..</a>
+                            </td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <th scope="col">
+                               . 
+                            </th>
+                            
+                            <td style="">
+                                UPDATEDBY
+                                
+                            </td>
+                            
+                            <td style="">
+                                
+                                
+                            </td>
+                            
+                            <td style="">
+                                false
+                                
+                            </td>
+                            
+                            <td style="">
+                                false
+                                
+                            </td>
+                            
+                            <td style="">
+                                
+                                
+                            </td>
+                            
+                            <td style="">
+                                NVARCHAR(50)
+                                
+                            </td>
+                            
+                            <td style="">
+                                
+                                
+                            </td>
+                            
+                            <td style="">
+                                Null
+                                
+                            </td>
+                            
+                            
+                            <td>
+                                <a href=#Link_Check_Constraint_Usage_3438>Details..</a>
+                            </td>
+                            
+                            <td>
+                                <a href=#Link_Default_Constraint_Usage_3438>Details..</a>
+                            </td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <th scope="col">
+                               . 
+                            </th>
+                            
+                            <td style="">
+                                UPDATEDON
+                                
+                            </td>
+                            
+                            <td style="">
+                                
+                                
+                            </td>
+                            
+                            <td style="">
+                                false
+                                
+                            </td>
+                            
+                            <td style="">
+                                false
+                                
+                            </td>
+                            
+                            <td style="">
+                                
+                                
+                            </td>
+                            
+                            <td style="">
+                                DATETIME DAY TO SECOND
+                                
+                            </td>
+                            
+                            <td style="">
+                                
+                                
+                            </td>
+                            
+                            <td style="">
+                                Null
+                                
+                            </td>
+                            
+                            
+                            <td>
+                                <a href=#Link_Check_Constraint_Usage_3439>Details..</a>
+                            </td>
+                            
+                            <td>
+                                <a href=#Link_Default_Constraint_Usage_3439>Details..</a>
+                            </td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <th scope="col">
+                               . 
+                            </th>
+                            
+                            <td style="">
+                                START DATE
+                                
+                            </td>
+                            
+                            <td style="">
+                                
+                                
+                                    
+                                    Represents when the Client Location is first occupied  <br>
+                                
+                                    
+                                     <br>
+                                
+                            </td>
+                            
+                            <td style="">
+                                false
+                                
+                            </td>
+                            
+                            <td style="">
+                                false
+                                
+                            </td>
+                            
+                            <td style="">
+                                
+                                
+                            </td>
+                            
+                            <td style="">
+                                DATE
+                                
+                            </td>
+                            
+                            <td style="">
+                                
+                                
+                            </td>
+                            
+                            <td style="">
+                                Null
+                                
+                            </td>
+                            
+                            
+                            <td>
+                                <a href=#Link_Check_Constraint_Usage_673>Details..</a>
+                            </td>
+                            
+                            <td>
+                                <a href=#Link_Default_Constraint_Usage_673>Details..</a>
+                            </td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <th scope="col">
+                               . 
+                            </th>
+                            
+                            <td style="">
+                                END DATE
+                                
+                            </td>
+                            
+                            <td style="">
+                                
+                                
+                                    
+                                    Represents when the Client Location is first vacant  <br>
+                                
+                                    
+                                     <br>
+                                
+                            </td>
+                            
+                            <td style="">
+                                false
+                                
+                            </td>
+                            
+                            <td style="">
+                                false
+                                
+                            </td>
+                            
+                            <td style="">
+                                
+                                
+                            </td>
+                            
+                            <td style="">
+                                DATE
+                                
+                            </td>
+                            
+                            <td style="">
+                                
+                                
+                            </td>
+                            
+                            <td style="">
+                                Null
+                                
+                            </td>
+                            
+                            
+                            <td>
+                                <a href=#Link_Check_Constraint_Usage_675>Details..</a>
+                            </td>
+                            
+                            <td>
+                                <a href=#Link_Default_Constraint_Usage_675>Details..</a>
+                            </td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <th scope="col">
+                               . 
+                            </th>
+                            
+                            <td style="">
+                                CONTRACT START DATE
+                                
+                            </td>
+                            
+                            <td style="">
+                                
+                                
+                                    
+                                    Represents the date the site starts being managed by FMS.  <br>
+                                
+                                    
+                                     <br>
+                                
+                            </td>
+                            
+                            <td style="">
+                                false
+                                
+                            </td>
+                            
+                            <td style="">
+                                false
+                                
+                            </td>
+                            
+                            <td style="">
+                                
+                                
+                            </td>
+                            
+                            <td style="">
+                                DATETIME DAY TO SECOND
+                                
+                            </td>
+                            
+                            <td style="">
+                                
+                                
+                            </td>
+                            
+                            <td style="">
+                                Null
+                                
+                            </td>
+                            
+                            
+                            <td>
+                                <a href=#Link_Check_Constraint_Usage_3440>Details..</a>
+                            </td>
+                            
+                            <td>
+                                <a href=#Link_Default_Constraint_Usage_3440>Details..</a>
+                            </td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <th scope="col">
+                               . 
+                            </th>
+                            
+                            <td style="">
+                                CONTRACT END DATE
+                                
+                            </td>
+                            
+                            <td style="">
+                                
+                                
+                                    
+                                    Represents the date the site ends being managed by FMS.  <br>
+                                
+                                    
+                                     <br>
+                                
+                            </td>
+                            
+                            <td style="">
+                                false
+                                
+                            </td>
+                            
+                            <td style="">
+                                false
+                                
+                            </td>
+                            
+                            <td style="">
+                                
+                                
+                            </td>
+                            
+                            <td style="">
+                                DATETIME DAY TO SECOND
+                                
+                            </td>
+                            
+                            <td style="">
+                                
+                                
+                            </td>
+                            
+                            <td style="">
+                                Null
+                                
+                            </td>
+                            
+                            
+                            <td>
+                                <a href=#Link_Check_Constraint_Usage_3441>Details..</a>
+                            </td>
+                            
+                            <td>
+                                <a href=#Link_Default_Constraint_Usage_3441>Details..</a>
+                            </td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <th scope="col">
+                               . 
+                            </th>
+                            
+                            <td style="">
+                                LAND AREA
+                                
+                            </td>
+                            
+                            <td style="">
+                                
+                                
+                                    
+                                    Land Area (For Land Records only - Land size in Acres)  <br>
+                                
+                                    
+                                     <br>
+                                
+                            </td>
+                            
+                            <td style="">
+                                false
+                                
+                            </td>
+                            
+                            <td style="">
+                                false
+                                
+                            </td>
+                            
+                            <td style="">
+                                
+                                
+                            </td>
+                            
+                            <td style="">
+                                DECIMAL(18,2)
+                                
+                            </td>
+                            
+                            <td style="">
+                                
+                                
+                            </td>
+                            
+                            <td style="">
+                                Null
+                                
+                            </td>
+                            
+                            
+                            <td>
+                                <a href=#Link_Check_Constraint_Usage_3443>Details..</a>
+                            </td>
+                            
+                            <td>
+                                <a href=#Link_Default_Constraint_Usage_3443>Details..</a>
+                            </td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <th scope="col">
+                               . 
+                            </th>
+                            
+                            <td style="">
+                                OFFICE SPACE AREA
+                                
+                            </td>
+                            
+                            <td style="">
+                                
+                                
+                                    
+                                    Actual floor space or a footprint used by occupier  <br>
+                                
+                                    
+                                     <br>
+                                
+                            </td>
+                            
+                            <td style="">
+                                false
+                                
+                            </td>
+                            
+                            <td style="">
+                                false
+                                
+                            </td>
+                            
+                            <td style="">
+                                
+                                
+                            </td>
+                            
+                            <td style="">
+                                DECIMAL(12,2)
+                                
+                            </td>
+                            
+                            <td style="">
+                                
+                                
+                            </td>
+                            
+                            <td style="">
+                                Null
+                                
+                            </td>
+                            
+                            
+                            <td>
+                                <a href=#Link_Check_Constraint_Usage_3444>Details..</a>
+                            </td>
+                            
+                            <td>
+                                <a href=#Link_Default_Constraint_Usage_3444>Details..</a>
+                            </td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <th scope="col">
+                               . 
+                            </th>
+                            
+                            <td style="">
+                                LOCATIONTIER
+                                
+                            </td>
+                            
+                            <td style="">
+                                
+                                
+                            </td>
+                            
+                            <td style="">
+                                false
+                                
+                            </td>
+                            
+                            <td style="">
+                                false
+                                
+                            </td>
+                            
+                            <td style="">
+                                
+                                
+                            </td>
+                            
+                            <td style="">
+                                INTEGER
+                                
+                            </td>
+                            
+                            <td style="">
+                                
+                                
+                            </td>
+                            
+                            <td style="">
+                                Null
+                                
+                            </td>
+                            
+                            
+                            <td>
+                                <a href=#Link_Check_Constraint_Usage_3445>Details..</a>
+                            </td>
+                            
+                            <td>
+                                <a href=#Link_Default_Constraint_Usage_3445>Details..</a>
+                            </td>
+                            
+                        </tr>
+                        
+                     </tbody>
+                </table>
+                
+                <a name="Link_Key_Group_599"></a>
+                <table class='datagrid' summary="ReportData" width="100%" style="">
+                    <caption>Key Group(s) of Entity &quot;CLIENT LOCATION&quot;</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col" width="20">
+                              # 
+                            </th>
+                            
+                            <th scope="col" style="" >
+                                Name
+                            </th>
+                            
+                            <th scope="col" style="" >
+                                Definition
+                            </th>
+                            
+                            <th scope="col" style="" >
+                                Logical Only
+                            </th>
+                            
+                            <th scope="col" style="" >
+                                AK ID
+                            </th>
+                            
+                            <th scope="col" style="" >
+                                Member
+                            </th>
+                            
+                        </tr>
+                    </thead>
+                    <tfoot>
+                        <tr>
+                            <th scope="row">Total</th>
+                            <td colspan="50">7</td>
+                        </tr>
+                    </tfoot>
+                    <tbody>
+                        
+                        <tr>
+                            <th scope="col">
+                               . 
+                            </th>
+                            
+                            <td style="">
+                                XPKCLIENT LOCATION
+                                
+                            </td>
+                            
+                            <td style="">
+                                
+                                
+                            </td>
+                            
+                            <td style="">
+                                
+                                
+                            </td>
+                            
+                            <td style="">
+                                PK
+                                
+                            </td>
+                            
+                            
+                            <td>
+                                <a href=#Link_Member_603>Details..</a>
+                            </td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <th scope="col">
+                               . 
+                            </th>
+                            
+                            <td style="">
+                                XIF1CLIENT LOCATION
+                                
+                            </td>
+                            
+                            <td style="">
+                                
+                                
+                            </td>
+                            
+                            <td style="">
+                                
+                                
+                            </td>
+                            
+                            <td style="">
+                                IF1
+                                
+                            </td>
+                            
+                            
+                            <td>
+                                <a href=#Link_Member_641>Details..</a>
+                            </td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <th scope="col">
+                               . 
+                            </th>
+                            
+                            <td style="">
+                                XIF3CLIENT LOCATION
+                                
+                            </td>
+                            
+                            <td style="">
+                                
+                                
+                            </td>
+                            
+                            <td style="">
+                                
+                                
+                            </td>
+                            
+                            <td style="">
+                                IF3
+                                
+                            </td>
+                            
+                            
+                            <td>
+                                <a href=#Link_Member_665>Details..</a>
+                            </td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <th scope="col">
+                               . 
+                            </th>
+                            
+                            <td style="">
+                                XIF4CLIENT LOCATION
+                                
+                            </td>
+                            
+                            <td style="">
+                                
+                                
+                            </td>
+                            
+                            <td style="">
+                                
+                                
+                            </td>
+                            
+                            <td style="">
+                                IF4
+                                
+                            </td>
+                            
+                            
+                            <td>
+                                <a href=#Link_Member_2784>Details..</a>
+                            </td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <th scope="col">
+                               . 
+                            </th>
+                            
+                            <td style="">
+                                XAK1CLIENT LOCATION
+                                
+                            </td>
+                            
+                            <td style="">
+                                
+                                
+                            </td>
+                            
+                            <td style="">
+                                
+                                
+                            </td>
+                            
+                            <td style="">
+                                AK1
+                                
+                            </td>
+                            
+                            
+                            <td>
+                                <a href=#Link_Member_3277>Details..</a>
+                            </td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <th scope="col">
+                               . 
+                            </th>
+                            
+                            <td style="">
+                                XIF2CLIENT LOCATION
+                                
+                            </td>
+                            
+                            <td style="">
+                                
+                                
+                            </td>
+                            
+                            <td style="">
+                                
+                                
+                            </td>
+                            
+                            <td style="">
+                                IF2
+                                
+                            </td>
+                            
+                            
+                            <td>
+                                <a href=#Link_Member_648>Details..</a>
+                            </td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <th scope="col">
+                               . 
+                            </th>
+                            
+                            <td style="">
+                                XIF5CLIENT LOCATION
+                                
+                            </td>
+                            
+                            <td style="">
+                                
+                                
+                            </td>
+                            
+                            <td style="">
+                                
+                                
+                            </td>
+                            
+                            <td style="">
+                                IF5
+                                
+                            </td>
+                            
+                            
+                            <td>
+                                <a href=#Link_Member_3635>Details..</a>
+                            </td>
+                            
+                        </tr>
+                        
+                     </tbody>
+                </table>
+                
+                <a name="Link_Member_603"></a>
+                <table class='datagrid' summary="ReportData" width="100%" style="">
+                    <caption>Member(s) of Key Group &quot;XPKCLIENT LOCATION&quot;</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col" width="20">
+                              # 
+                            </th>
+                            
+                            <th scope="col" style="" >
+                                Name
+                            </th>
+                            
+                            <th scope="col" style="" >
+                                Attribute
+                            </th>
+                            
+                            <th scope="col" style="" >
+                                Logical Only
+                            </th>
+                            
+                        </tr>
+                    </thead>
+                    <tfoot>
+                        <tr>
+                            <th scope="row">Total</th>
+                            <td colspan="50">1</td>
+                        </tr>
+                    </tfoot>
+                    <tbody>
+                        
+                        <tr>
+                            <th scope="col">
+                               . 
+                            </th>
+                            
+                            <td style="">
+                                CLIENT LOCATION IDENTITY
+                                
+                            </td>
+                            
+                            <td style="">
+                                CLIENT LOCATION IDENTITY
+                                
+                            </td>
+                            
+                            <td style="">
+                                
+                                
+                            </td>
+                            
+                            
+                        </tr>
+                        
+                     </tbody>
+                </table>
+                
+                <a name="Link_Member_641"></a>
+                <table class='datagrid' summary="ReportData" width="100%" style="">
+                    <caption>Member(s) of Key Group &quot;XIF1CLIENT LOCATION&quot;</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col" width="20">
+                              # 
+                            </th>
+                            
+                            <th scope="col" style="" >
+                                Name
+                            </th>
+                            
+                            <th scope="col" style="" >
+                                Attribute
+                            </th>
+                            
+                            <th scope="col" style="" >
+                                Logical Only
+                            </th>
+                            
+                        </tr>
+                    </thead>
+                    <tfoot>
+                        <tr>
+                            <th scope="row">Total</th>
+                            <td colspan="50">1</td>
+                        </tr>
+                    </tfoot>
+                    <tbody>
+                        
+                        <tr>
+                            <th scope="col">
+                               . 
+                            </th>
+                            
+                            <td style="">
+                                PHYSICAL LOCATION IDENTITY
+                                
+                            </td>
+                            
+                            <td style="">
+                                PHYSICAL LOCATION IDENTITY
+                                
+                            </td>
+                            
+                            <td style="">
+                                
+                                
+                            </td>
+                            
+                            
+                        </tr>
+                        
+                     </tbody>
+                </table>
+                
+                <a name="Link_Member_665"></a>
+                <table class='datagrid' summary="ReportData" width="100%" style="">
+                    <caption>Member(s) of Key Group &quot;XIF3CLIENT LOCATION&quot;</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col" width="20">
+                              # 
+                            </th>
+                            
+                            <th scope="col" style="" >
+                                Name
+                            </th>
+                            
+                            <th scope="col" style="" >
+                                Attribute
+                            </th>
+                            
+                            <th scope="col" style="" >
+                                Logical Only
+                            </th>
+                            
+                        </tr>
+                    </thead>
+                    <tfoot>
+                        <tr>
+                            <th scope="row">Total</th>
+                            <td colspan="50">1</td>
+                        </tr>
+                    </tfoot>
+                    <tbody>
+                        
+                        <tr>
+                            <th scope="col">
+                               . 
+                            </th>
+                            
+                            <td style="">
+                                FMZ IDENTITY
+                                
+                            </td>
+                            
+                            <td style="">
+                                FMZ IDENTITY
+                                
+                            </td>
+                            
+                            <td style="">
+                                
+                                
+                            </td>
+                            
+                            
+                        </tr>
+                        
+                     </tbody>
+                </table>
+                
+                <a name="Link_Member_2784"></a>
+                <table class='datagrid' summary="ReportData" width="100%" style="">
+                    <caption>Member(s) of Key Group &quot;XIF4CLIENT LOCATION&quot;</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col" width="20">
+                              # 
+                            </th>
+                            
+                            <th scope="col" style="" >
+                                Name
+                            </th>
+                            
+                            <th scope="col" style="" >
+                                Attribute
+                            </th>
+                            
+                            <th scope="col" style="" >
+                                Logical Only
+                            </th>
+                            
+                        </tr>
+                    </thead>
+                    <tfoot>
+                        <tr>
+                            <th scope="row">Total</th>
+                            <td colspan="50">1</td>
+                        </tr>
+                    </tfoot>
+                    <tbody>
+                        
+                        <tr>
+                            <th scope="col">
+                               . 
+                            </th>
+                            
+                            <td style="">
+                                SITE IDENTITY
+                                
+                            </td>
+                            
+                            <td style="">
+                                SITE IDENTITY
+                                
+                            </td>
+                            
+                            <td style="">
+                                
+                                
+                            </td>
+                            
+                            
+                        </tr>
+                        
+                     </tbody>
+                </table>
+                
+                <a name="Link_Member_3277"></a>
+                <table class='datagrid' summary="ReportData" width="100%" style="">
+                    <caption>Member(s) of Key Group &quot;XAK1CLIENT LOCATION&quot;</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col" width="20">
+                              # 
+                            </th>
+                            
+                            <th scope="col" style="" >
+                                Name
+                            </th>
+                            
+                            <th scope="col" style="" >
+                                Attribute
+                            </th>
+                            
+                            <th scope="col" style="" >
+                                Logical Only
+                            </th>
+                            
+                        </tr>
+                    </thead>
+                    <tfoot>
+                        <tr>
+                            <th scope="row">Total</th>
+                            <td colspan="50">1</td>
+                        </tr>
+                    </tfoot>
+                    <tbody>
+                        
+                        <tr>
+                            <th scope="col">
+                               . 
+                            </th>
+                            
+                            <td style="">
+                                PHYSICAL LOCATION IDENTITY
+                                
+                            </td>
+                            
+                            <td style="">
+                                PHYSICAL LOCATION IDENTITY
+                                
+                            </td>
+                            
+                            <td style="">
+                                
+                                
+                            </td>
+                            
+                            
+                        </tr>
+                        
+                     </tbody>
+                </table>
+                
+                <a name="Link_Member_648"></a>
+                <table class='datagrid' summary="ReportData" width="100%" style="">
+                    <caption>Member(s) of Key Group &quot;XIF2CLIENT LOCATION&quot;</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col" width="20">
+                              # 
+                            </th>
+                            
+                            <th scope="col" style="" >
+                                Name
+                            </th>
+                            
+                            <th scope="col" style="" >
+                                Attribute
+                            </th>
+                            
+                            <th scope="col" style="" >
+                                Logical Only
+                            </th>
+                            
+                        </tr>
+                    </thead>
+                    <tfoot>
+                        <tr>
+                            <th scope="row">Total</th>
+                            <td colspan="50">1</td>
+                        </tr>
+                    </tfoot>
+                    <tbody>
+                        
+                        <tr>
+                            <th scope="col">
+                               . 
+                            </th>
+                            
+                            <td style="">
+                                CLIENT IDENTITY
+                                
+                            </td>
+                            
+                            <td style="">
+                                CLIENT IDENTITY
+                                
+                            </td>
+                            
+                            <td style="">
+                                
+                                
+                            </td>
+                            
+                            
+                        </tr>
+                        
+                     </tbody>
+                </table>
+                
+                <a name="Link_Member_3635"></a>
+                <table class='datagrid' summary="ReportData" width="100%" style="">
+                    <caption>Member(s) of Key Group &quot;XIF5CLIENT LOCATION&quot;</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col" width="20">
+                              # 
+                            </th>
+                            
+                            <th scope="col" style="" >
+                                Name
+                            </th>
+                            
+                            <th scope="col" style="" >
+                                Attribute
+                            </th>
+                            
+                            <th scope="col" style="" >
+                                Logical Only
+                            </th>
+                            
+                        </tr>
+                    </thead>
+                    <tfoot>
+                        <tr>
+                            <th scope="row">Total</th>
+                            <td colspan="50">1</td>
+                        </tr>
+                    </tfoot>
+                    <tbody>
+                        
+                        <tr>
+                            <th scope="col">
+                               . 
+                            </th>
+                            
+                            <td style="">
+                                CLIENT LOCATION STATUS IDENTITY
+                                
+                            </td>
+                            
+                            <td style="">
+                                CLIENT LOCATION STATUS IDENTITY
+                                
+                            </td>
+                            
+                            <td style="">
+                                
+                                
+                            </td>
+                            
+                            
+                        </tr>
+                        
+                     </tbody>
+                </table>
+                
+                <a name="Link_Child_Relationship_599"></a>
+                <table class='datagrid' summary="ReportData" width="100%" style="">
+                    <caption>Child Relationship(s) of Entity &quot;CLIENT LOCATION&quot;</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col" width="20">
+                              # 
+                            </th>
+                            
+                            <th scope="col" style="" >
+                                Relationship
+                            </th>
+                            
+                        </tr>
+                    </thead>
+                    <tfoot>
+                        <tr>
+                            <th scope="row">Total</th>
+                            <td colspan="50">1</td>
+                        </tr>
+                    </tfoot>
+                    <tbody>
+                        
+                        <tr>
+                            <th scope="col">
+                               . 
+                            </th>
+                            
+                            
+                            <td>
+                                <a href=#Link_Relationship_599>Details..</a>
+                            </td>
+                            
+                        </tr>
+                        
+                     </tbody>
+                </table>
+                
+                <a name="Link_Relationship_599"></a>
+                <table class='datagrid' summary="ReportData" width="100%" style="">
+                    <caption>Relationship(s) of Child Relationship &quot;CLIENT LOCATION&quot;</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col" width="20">
+                              # 
+                            </th>
+                            
+                            <th scope="col" style="" >
+                                Name
+                            </th>
+                            
+                            <th scope="col" style="" >
+                                Attribute Rolename
+                            </th>
+                            
+                            <th scope="col" style="" >
+                                Cardinality
+                            </th>
+                            
+                            <th scope="col" style="" >
+                                Logical Only
+                            </th>
+                            
+                        </tr>
+                    </thead>
+                    <tfoot>
+                        <tr>
+                            <th scope="row">Total</th>
+                            <td colspan="50">5</td>
+                        </tr>
+                    </tfoot>
+                    <tbody>
+                        
+                        <tr>
+                            <th scope="col">
+                               . 
+                            </th>
+                            
+                            <td style="">
+                                R/28
+                                
+                            </td>
+                            
+                            <td style="">
+                                
+                                
+                            </td>
+                            
+                            <td style="">
+                                Zero or One (Z)
+                                
+                            </td>
+                            
+                            <td style="">
+                                
+                                
+                            </td>
+                            
+                            
+                        </tr>
+                        
+                        <tr>
+                            <th scope="col">
+                               . 
+                            </th>
+                            
+                            <td style="">
+                                R/29
+                                
+                            </td>
+                            
+                            <td style="">
+                                
+                                
+                            </td>
+                            
+                            <td style="">
+                                Zero, One or More
+                                
+                            </td>
+                            
+                            <td style="">
+                                
+                                
+                            </td>
+                            
+                            
+                        </tr>
+                        
+                        <tr>
+                            <th scope="col">
+                               . 
+                            </th>
+                            
+                            <td style="">
+                                R/30
+                                
+                            </td>
+                            
+                            <td style="">
+                                
+                                
+                            </td>
+                            
+                            <td style="">
+                                Zero, One or More
+                                
+                            </td>
+                            
+                            <td style="">
+                                
+                                
+                            </td>
+                            
+                            
+                        </tr>
+                        
+                        <tr>
+                            <th scope="col">
+                               . 
+                            </th>
+                            
+                            <td style="">
+                                R/86
+                                
+                            </td>
+                            
+                            <td style="">
+                                
+                                
+                            </td>
+                            
+                            <td style="">
+                                Zero, One or More
+                                
+                            </td>
+                            
+                            <td style="">
+                                
+                                
+                            </td>
+                            
+                            
+                        </tr>
+                        
+                        <tr>
+                            <th scope="col">
+                               . 
+                            </th>
+                            
+                            <td style="">
+                                R/113
+                                
+                            </td>
+                            
+                            <td style="">
+                                
+                                
+                            </td>
+                            
+                            <td style="">
+                                Zero, One or More
+                                
+                            </td>
+                            
+                            <td style="">
+                                
+                                
+                            </td>
+                            
+                            
+                        </tr>
+                        
+                     </tbody>
+                </table>
+                
+                <a name="Link_Parent_Relationship_599"></a>
+                <table class='datagrid' summary="ReportData" width="100%" style="">
+                    <caption>Parent Relationship(s) of Entity &quot;CLIENT LOCATION&quot;</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col" width="20">
+                              # 
+                            </th>
+                            
+                            <th scope="col" style="" >
+                                Relationship
+                            </th>
+                            
+                        </tr>
+                    </thead>
+                    <tfoot>
+                        <tr>
+                            <th scope="row">Total</th>
+                            <td colspan="50">1</td>
+                        </tr>
+                    </tfoot>
+                    <tbody>
+                        
+                        <tr>
+                            <th scope="col">
+                               . 
+                            </th>
+                            
+                            
+                            <td>
+                                <a href=#Link_Relationship_599>Details..</a>
+                            </td>
+                            
+                        </tr>
+                        
+                     </tbody>
+                </table>
+                
+                <a name="Link_Relationship_599"></a>
+                <table class='datagrid' summary="ReportData" width="100%" style="">
+                    <caption>Relationship(s) of Parent Relationship &quot;CLIENT LOCATION&quot;</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col" width="20">
+                              # 
+                            </th>
+                            
+                            <th scope="col" style="" >
+                                Name
+                            </th>
+                            
+                            <th scope="col" style="" >
+                                Attribute Rolename
+                            </th>
+                            
+                            <th scope="col" style="" >
+                                Cardinality
+                            </th>
+                            
+                        </tr>
+                    </thead>
+                    <tfoot>
+                        <tr>
+                            <th scope="row">Total</th>
+                            <td colspan="50">9</td>
+                        </tr>
+                    </tfoot>
+                    <tbody>
+                        
+                        <tr>
+                            <th scope="col">
+                               . 
+                            </th>
+                            
+                            <td style="">
+                                R/25
+                                
+                            </td>
+                            
+                            <td style="">
+                                
+                                
+                            </td>
+                            
+                            <td style="">
+                                Zero, One or More
+                                
+                            </td>
+                            
+                            
+                        </tr>
+                        
+                        <tr>
+                            <th scope="col">
+                               . 
+                            </th>
+                            
+                            <td style="">
+                                R/61
+                                
+                            </td>
+                            
+                            <td style="">
+                                
+                                
+                            </td>
+                            
+                            <td style="">
+                                Zero or One (Z)
+                                
+                            </td>
+                            
+                            
+                        </tr>
+                        
+                        <tr>
+                            <th scope="col">
+                               . 
+                            </th>
+                            
+                            <td style="">
+                                R/63
+                                
+                            </td>
+                            
+                            <td style="">
+                                
+                                
+                            </td>
+                            
+                            <td style="">
+                                Zero, One or More
+                                
+                            </td>
+                            
+                            
+                        </tr>
+                        
+                        <tr>
+                            <th scope="col">
+                               . 
+                            </th>
+                            
+                            <td style="">
+                                R/64
+                                
+                            </td>
+                            
+                            <td style="">
+                                
+                                
+                            </td>
+                            
+                            <td style="">
+                                Zero, One or More
+                                
+                            </td>
+                            
+                            
+                        </tr>
+                        
+                        <tr>
+                            <th scope="col">
+                               . 
+                            </th>
+                            
+                            <td style="">
+                                R/66
+                                
+                            </td>
+                            
+                            <td style="">
+                                
+                                
+                            </td>
+                            
+                            <td style="">
+                                Zero, One or More
+                                
+                            </td>
+                            
+                            
+                        </tr>
+                        
+                        <tr>
+                            <th scope="col">
+                               . 
+                            </th>
+                            
+                            <td style="">
+                                R/84
+                                
+                            </td>
+                            
+                            <td style="">
+                                
+                                
+                            </td>
+                            
+                            <td style="">
+                                Zero, One or More
+                                
+                            </td>
+                            
+                            
+                        </tr>
+                        
+                        <tr>
+                            <th scope="col">
+                               . 
+                            </th>
+                            
+                            <td style="">
+                                R/93
+                                
+                            </td>
+                            
+                            <td style="">
+                                
+                                
+                            </td>
+                            
+                            <td style="">
+                                Zero, One or More
+                                
+                            </td>
+                            
+                            
+                        </tr>
+                        
+                        <tr>
+                            <th scope="col">
+                               . 
+                            </th>
+                            
+                            <td style="">
+                                R/98
+                                
+                            </td>
+                            
+                            <td style="">
+                                
+                                
+                            </td>
+                            
+                            <td style="">
+                                Zero, One or More
+                                
+                            </td>
+                            
+                            
+                        </tr>
+                        
+                        <tr>
+                            <th scope="col">
+                               . 
+                            </th>
+                            
+                            <td style="">
+                                R/100
+                                
+                            </td>
+                            
+                            <td style="">
+                                
+                                
+                            </td>
+                            
+                            <td style="">
+                                Zero, One or More
+                                
+                            </td>
+                            
+                            
+                        </tr>
+                        
+                     </tbody>
+                </table>
+                 
+            </div>
+            <div id="footer" style="float: right">
+                <p>Author : </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

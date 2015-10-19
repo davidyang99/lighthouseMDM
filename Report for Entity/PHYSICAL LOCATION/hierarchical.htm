@@ -1,0 +1,2540 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html dir="ltr" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html">
+    <title>CA ERwin Report Designer - Report for Entity Document </title>
+
+    <style>
+        table.datagrid
+        {
+            font: normal 76%/150% "Lucida Grande" , "Lucida Sans Unicode" , Verdana, Arial, Helvetica, sans-serif;
+            border-collapse: separate;
+            border-spacing: 0;
+            margin: 0 0 1em;
+            color: #000;
+        }
+        table.datagrid a
+        {
+            color: #523A0B;
+            text-decoration: none;
+            border-bottom: 1px dotted;
+        }
+        table.datagrid a:visited
+        {
+            color: #444;
+            font-weight: normal;
+        }
+        table.datagrid a:visited:after
+        {
+            content: "\00A0\221A";
+        }
+        table.datagrid a:hover
+        {
+            border-bottom-style: solid;
+        }
+        table.datagrid thead th, thead td, tfoot th, tfoot td
+        {
+            border: 1px solid #523A0B;
+            border-width: 1px 0;
+            background: #EBE5D9;
+        }
+        table.datagrid th
+        {
+            font-weight: bold;
+            line-height: normal;
+            padding: 0.25em 0.5em;
+            text-align: left;
+        }
+        table.datagrid tbody th, td
+        {
+            padding: 0.25em 0.5em;
+            text-align: left;
+            vertical-align: top;
+        }
+        table.datagrid tbody th
+        {
+            font-weight: normal;
+            white-space: nowrap;
+        }
+        table.datagrid tbody th a:link, tbody th a:visited
+        {
+            font-weight: bold;
+        }
+        table.datagrid tbody td, tbody th
+        {
+            border: 1px solid #fff;
+            border-width: 1px 0;
+        }
+        table.datagrid tbody tr.odd th, tbody tr.odd td
+        {
+            border-color: #EBE5D9;
+            background: #F7F4EE;
+        }
+        table.datagrid tbody tr:hover td, tbody tr:hover th
+        {
+            background: #ffffee;
+            border-color: #523A0B;
+        }
+                
+        .BlankHeader th
+        {
+            padding: 5px 10px;
+            border: 1px solid #d9d9d9;
+            background: #000000;
+            border-bottom: navy solid thin;
+            border-top: navy solid thin;
+            border-left: none;
+            border-right: none;
+            font-size: smaller;
+        }
+        caption
+        {
+            font-family: Georgia,Times,serif;
+            font-weight: normal;
+            font-size: 1.4em;
+            text-align: left;
+            margin: 0;
+            padding: 0.5em 0.25em;
+        }
+        
+        #menu ul
+        {
+            margin: 0px;
+            padding: 0px;
+            list-style-type: none;
+        }
+
+        .CurrentA
+        {
+            display: block;
+            width: 8em;
+            color: white;
+            background-color: #000099;
+            text-decoration: none;
+            text-align: center;
+        }
+        .NormalA
+        {
+            display: block;
+            width: 8em;
+            color: white;
+            background-color: #C0C0C0;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        #menu a:hover
+        {
+            background-color: #008000;
+        }
+        #menu li
+        {
+            float: left;
+            margin-right: 0.5em;
+        }
+    </style>
+</head>
+<body>
+    <div id="boundary">
+        <div id="content">
+            <table id="theReport" cellpading="1" border="2" align="center" style="">
+                <tr>
+                    <td align="center" valign="middle">
+                        <b><font size="5" color="#000000" face='Times New Roman'>Subject Area : PHYSICAL LOCATION</font></b>
+                    </td>
+                </tr>
+            </table>
+            <div id="menu" style="float: right">
+                <ul>
+                    <li>Select Format:</li>
+                    <li><a href="tabular.htm" class="NormalA">Tabular</a></li>
+                    <li><a href="hierarchical.htm" class="CurrentA">Hierarchical</a></li>
+                </ul>
+            </div>
+            <table id="theheader" cellpading="1" border="0" width="100%">
+                <tr>
+                    <td align="LEFT" valign="TOP">
+                        <b><font size="3" face='Times New Roman'></font></b>
+                    </td>
+                </tr>
+            </table>
+            <div id="itsthetable">
+                <table summary="ReportData" class='datagrid' width="100%">
+                
+                    <thead>
+                        <tr>
+                            
+                            
+                            
+                            <th style="">
+                                <b>Entity Name</b>
+                            </th>
+                            
+                            <th style="">
+                                <b>Definition</b>
+                            </th>
+                            
+                            <th style="">
+                                <b>Logical Only</b>
+                            </th>
+                            
+                        </tr>
+                    </thead>
+                    
+                    <tr>
+                        
+                        <td style="">
+                            PHYSICAL LOCATION
+                            
+                        </td>
+                        
+                        <td style="">
+                            
+                            
+                                
+                                Physical building representing the entire structure regardless of tenants or clients within.  <br>
+                            
+                                
+                                 <br>
+                            
+                        </td>
+                        
+                        <td style="">
+                            
+                            
+                        </td>
+                        
+                    </tr>
+                     
+                
+                    <thead>
+                        <tr>
+                            
+                            <th style="background-color: #FFFFFF">
+                                <B></B>
+                            </th>
+                            
+                            
+                            
+                            <th style="">
+                                <b>Attribute Name</b>
+                            </th>
+                            
+                            <th style="">
+                                <b>Definition</b>
+                            </th>
+                            
+                            <th style="">
+                                <b>Is FK</b>
+                            </th>
+                            
+                            <th style="">
+                                <b>Is PK</b>
+                            </th>
+                            
+                            <th style="">
+                                <b>Logical Only</b>
+                            </th>
+                            
+                            <th style="">
+                                <b>Logical Data Type</b>
+                            </th>
+                            
+                            <th style="">
+                                <b>Note List</b>
+                            </th>
+                            
+                            <th style="">
+                                <b>Null Option</b>
+                            </th>
+                            
+                        </tr>
+                    </thead>
+                    
+                    <tr>
+                        
+                        <td style="">
+                             
+                            
+                        </td>
+                        
+                        <td style="">
+                            PHYSICAL LOCATION IDENTITY
+                            
+                        </td>
+                        
+                        <td style="">
+                            
+                            
+                        </td>
+                        
+                        <td style="">
+                            false
+                            
+                        </td>
+                        
+                        <td style="">
+                            true
+                            
+                        </td>
+                        
+                        <td style="">
+                            
+                            
+                        </td>
+                        
+                        <td style="">
+                            HUGE
+                            
+                        </td>
+                        
+                        <td style="">
+                            
+                            
+                        </td>
+                        
+                        <td style="">
+                            Not Null
+                            
+                        </td>
+                        
+                    </tr>
+                     
+                
+                    <thead>
+                        <tr>
+                            
+                            
+                            
+                        </tr>
+                    </thead>
+                    
+                    <tr>
+                        
+                        <td style="">
+                             
+                            
+                        </td>
+                        
+                        <td style="">
+                            PHYSICAL LOCATION TIMEZONE IDENTITY
+                            
+                        </td>
+                        
+                        <td style="">
+                            
+                            
+                        </td>
+                        
+                        <td style="">
+                            true
+                            
+                        </td>
+                        
+                        <td style="">
+                            false
+                            
+                        </td>
+                        
+                        <td style="">
+                            
+                            
+                        </td>
+                        
+                        <td style="">
+                            INTEGER
+                            
+                        </td>
+                        
+                        <td style="">
+                            
+                            
+                        </td>
+                        
+                        <td style="">
+                            Not Null
+                            
+                        </td>
+                        
+                    </tr>
+                     
+                
+                    <thead>
+                        <tr>
+                            
+                            
+                            
+                        </tr>
+                    </thead>
+                    
+                    <tr>
+                        
+                        <td style="">
+                             
+                            
+                        </td>
+                        
+                        <td style="">
+                            PHYSICAL LOCATION ENVIRONMENT CONDITION
+                            
+                        </td>
+                        
+                        <td style="">
+                            
+                            
+                                
+                                Represents whether any environmental hazards exist within the Physical Structure such as Asbestos, Mould, etc. and will serve as a general warning about the Physical Structure.  <br>
+                            
+                                
+                                 <br>
+                            
+                        </td>
+                        
+                        <td style="">
+                            false
+                            
+                        </td>
+                        
+                        <td style="">
+                            false
+                            
+                        </td>
+                        
+                        <td style="">
+                            
+                            
+                        </td>
+                        
+                        <td style="">
+                            CHAR
+                            
+                        </td>
+                        
+                        <td style="">
+                            
+                            
+                        </td>
+                        
+                        <td style="">
+                            Not Null
+                            
+                        </td>
+                        
+                    </tr>
+                     
+                
+                    <thead>
+                        <tr>
+                            
+                            
+                            
+                        </tr>
+                    </thead>
+                    
+                    <tr>
+                        
+                        <td style="">
+                             
+                            
+                        </td>
+                        
+                        <td style="">
+                            PHYSICAL LOCATION HERITAGE
+                            
+                        </td>
+                        
+                        <td style="">
+                            
+                            
+                        </td>
+                        
+                        <td style="">
+                            false
+                            
+                        </td>
+                        
+                        <td style="">
+                            false
+                            
+                        </td>
+                        
+                        <td style="">
+                            
+                            
+                        </td>
+                        
+                        <td style="">
+                            INTEGER
+                            
+                        </td>
+                        
+                        <td style="">
+                            
+                            
+                        </td>
+                        
+                        <td style="">
+                            Null
+                            
+                        </td>
+                        
+                    </tr>
+                     
+                
+                    <thead>
+                        <tr>
+                            
+                            
+                            
+                        </tr>
+                    </thead>
+                    
+                    <tr>
+                        
+                        <td style="">
+                             
+                            
+                        </td>
+                        
+                        <td style="">
+                            PHYSICAL LOCATION DESIGNATION DATE
+                            
+                        </td>
+                        
+                        <td style="">
+                            
+                            
+                                
+                                Represents when the Physical Location has been declared and/or plaqued the site is now Heritage applicable. From that date forward the site now must adhere to Heritage construction code/approvals.  <br>
+                            
+                                
+                                 <br>
+                            
+                        </td>
+                        
+                        <td style="">
+                            false
+                            
+                        </td>
+                        
+                        <td style="">
+                            false
+                            
+                        </td>
+                        
+                        <td style="">
+                            
+                            
+                        </td>
+                        
+                        <td style="">
+                            DATETIME DAY TO SECOND
+                            
+                        </td>
+                        
+                        <td style="">
+                            
+                            
+                        </td>
+                        
+                        <td style="">
+                            Null
+                            
+                        </td>
+                        
+                    </tr>
+                     
+                
+                    <thead>
+                        <tr>
+                            
+                            
+                            
+                        </tr>
+                    </thead>
+                    
+                    <tr>
+                        
+                        <td style="">
+                             
+                            
+                        </td>
+                        
+                        <td style="">
+                            PHYSICAL LOCATION DESIGNATION DESCRIPTION
+                            
+                        </td>
+                        
+                        <td style="">
+                            
+                            
+                                
+                                Represents an overview/summary of what the Heritage implications are within the respective Physical Location.  <br>
+                            
+                                
+                                 <br>
+                            
+                        </td>
+                        
+                        <td style="">
+                            false
+                            
+                        </td>
+                        
+                        <td style="">
+                            false
+                            
+                        </td>
+                        
+                        <td style="">
+                            
+                            
+                        </td>
+                        
+                        <td style="">
+                            NVARCHAR(500)
+                            
+                        </td>
+                        
+                        <td style="">
+                            
+                            
+                        </td>
+                        
+                        <td style="">
+                            Null
+                            
+                        </td>
+                        
+                    </tr>
+                     
+                
+                    <thead>
+                        <tr>
+                            
+                            
+                            
+                        </tr>
+                    </thead>
+                    
+                    <tr>
+                        
+                        <td style="">
+                             
+                            
+                        </td>
+                        
+                        <td style="">
+                            PHYSICAL LOCATION NOTES
+                            
+                        </td>
+                        
+                        <td style="">
+                            
+                            
+                                
+                                Represents a spare notes field (while not currently displayed today) to store any additional information about the Physical Location.  <br>
+                            
+                                
+                                 <br>
+                            
+                        </td>
+                        
+                        <td style="">
+                            false
+                            
+                        </td>
+                        
+                        <td style="">
+                            false
+                            
+                        </td>
+                        
+                        <td style="">
+                            
+                            
+                        </td>
+                        
+                        <td style="">
+                            NVARCHAR(2000)
+                            
+                        </td>
+                        
+                        <td style="">
+                            
+                            
+                        </td>
+                        
+                        <td style="">
+                            Null
+                            
+                        </td>
+                        
+                    </tr>
+                     
+                
+                    <thead>
+                        <tr>
+                            
+                            
+                            
+                        </tr>
+                    </thead>
+                    
+                    <tr>
+                        
+                        <td style="">
+                             
+                            
+                        </td>
+                        
+                        <td style="">
+                            COOLING BALANCE POINT TEMPERATURE
+                            
+                        </td>
+                        
+                        <td style="">
+                            
+                            
+                                
+                                Represents the outdoor temperature after which cooling needs to be supplied to lower the temperature within the property. Because buildings have internal heat/cooling gains/loss, the balance point will be lower than the thermostat set point. Label associated with this field should indicate Celsius.  <br>
+                            
+                                
+                                 <br>
+                            
+                        </td>
+                        
+                        <td style="">
+                            false
+                            
+                        </td>
+                        
+                        <td style="">
+                            false
+                            
+                        </td>
+                        
+                        <td style="">
+                            
+                            
+                        </td>
+                        
+                        <td style="">
+                            INTEGER
+                            
+                        </td>
+                        
+                        <td style="">
+                            
+                            
+                        </td>
+                        
+                        <td style="">
+                            Null
+                            
+                        </td>
+                        
+                    </tr>
+                     
+                
+                    <thead>
+                        <tr>
+                            
+                            
+                            
+                        </tr>
+                    </thead>
+                    
+                    <tr>
+                        
+                        <td style="">
+                             
+                            
+                        </td>
+                        
+                        <td style="">
+                            PHYSICAL LOCATION WEATHERSTATION
+                            
+                        </td>
+                        
+                        <td style="">
+                            
+                            
+                                
+                                Represents a Governmental/Potentially NGO related Entity capture Weather related data within a specific geographical radius. The Physical Location falls within this boundary.   <br>
+                            
+                                
+                                Weather Station ID (Links to GOBJ WSTATION table)  <br>
+                            
+                                &nbsp;
+                                 <br>
+                            
+                                
+                                 <br>
+                            
+                        </td>
+                        
+                        <td style="">
+                            false
+                            
+                        </td>
+                        
+                        <td style="">
+                            false
+                            
+                        </td>
+                        
+                        <td style="">
+                            
+                            
+                        </td>
+                        
+                        <td style="">
+                            INTEGER
+                            
+                        </td>
+                        
+                        <td style="">
+                            
+                            
+                        </td>
+                        
+                        <td style="">
+                            Null
+                            
+                        </td>
+                        
+                    </tr>
+                     
+                
+                    <thead>
+                        <tr>
+                            
+                            
+                            
+                        </tr>
+                    </thead>
+                    
+                    <tr>
+                        
+                        <td style="">
+                             
+                            
+                        </td>
+                        
+                        <td style="">
+                            HEATING BALANCE POINT TEMPERATURE
+                            
+                        </td>
+                        
+                        <td style="">
+                            
+                            
+                                
+                                Represents the outdoor temperature after which heating needs to be supplied to increase the temperature within the property. Because buildings have internal cooling losses, the balance point will be higher than the thermostat set point.  Label associated with this field should indicate Celsius.  <br>
+                            
+                                
+                                 <br>
+                            
+                        </td>
+                        
+                        <td style="">
+                            false
+                            
+                        </td>
+                        
+                        <td style="">
+                            false
+                            
+                        </td>
+                        
+                        <td style="">
+                            
+                            
+                        </td>
+                        
+                        <td style="">
+                            INTEGER
+                            
+                        </td>
+                        
+                        <td style="">
+                            
+                            
+                        </td>
+                        
+                        <td style="">
+                            Null
+                            
+                        </td>
+                        
+                    </tr>
+                     
+                
+                    <thead>
+                        <tr>
+                            
+                            
+                            
+                        </tr>
+                    </thead>
+                    
+                    <tr>
+                        
+                        <td style="">
+                             
+                            
+                        </td>
+                        
+                        <td style="">
+                            PRIMARY HEATING ENERGY SOURCE
+                            
+                        </td>
+                        
+                        <td style="">
+                            
+                            
+                                
+                                Represents what type of fuel is used to heat the property.  <br>
+                            
+                                
+                                Primary Heating Source (links to RealProperty Lookup table, TYPECLASS=HEATINGSOURCE)  <br>
+                            
+                                
+                                 <br>
+                            
+                        </td>
+                        
+                        <td style="">
+                            false
+                            
+                        </td>
+                        
+                        <td style="">
+                            false
+                            
+                        </td>
+                        
+                        <td style="">
+                            
+                            
+                        </td>
+                        
+                        <td style="">
+                            INTEGER
+                            
+                        </td>
+                        
+                        <td style="">
+                            
+                            
+                        </td>
+                        
+                        <td style="">
+                            Null
+                            
+                        </td>
+                        
+                    </tr>
+                     
+                
+                    <thead>
+                        <tr>
+                            
+                            
+                            
+                        </tr>
+                    </thead>
+                    
+                    <tr>
+                        
+                        <td style="">
+                             
+                            
+                        </td>
+                        
+                        <td style="">
+                            SECONDARY HEATING ENERGY SOURCE
+                            
+                        </td>
+                        
+                        <td style="">
+                            
+                            
+                                
+                                Represents what type of fuel is used to heat the property. If there is additional equipment in the property heating the minority of it, this represents the ability to capture the secondary heating fuel source.  <br>
+                            
+                                
+                                Secondary Heating Source (links to RealProperty Lookup table, TYPECLASS=HEATINGSOURCE)  <br>
+                            
+                                
+                                 <br>
+                            
+                        </td>
+                        
+                        <td style="">
+                            false
+                            
+                        </td>
+                        
+                        <td style="">
+                            false
+                            
+                        </td>
+                        
+                        <td style="">
+                            
+                            
+                        </td>
+                        
+                        <td style="">
+                            INTEGER
+                            
+                        </td>
+                        
+                        <td style="">
+                            
+                            
+                        </td>
+                        
+                        <td style="">
+                            Null
+                            
+                        </td>
+                        
+                    </tr>
+                     
+                
+                    <thead>
+                        <tr>
+                            
+                            
+                            
+                        </tr>
+                    </thead>
+                    
+                    <tr>
+                        
+                        <td style="">
+                             
+                            
+                        </td>
+                        
+                        <td style="">
+                            PRIMARY COOLING ENERGY SOURCE
+                            
+                        </td>
+                        
+                        <td style="">
+                            
+                            
+                                
+                                Represents what type of fuel is used to cool the property.  <br>
+                            
+                                
+                                Primary Cooling Source (links to RealProperty Lookup table, TYPECLASS=COOLINGSOURCE)  <br>
+                            
+                                
+                                 <br>
+                            
+                        </td>
+                        
+                        <td style="">
+                            false
+                            
+                        </td>
+                        
+                        <td style="">
+                            false
+                            
+                        </td>
+                        
+                        <td style="">
+                            
+                            
+                        </td>
+                        
+                        <td style="">
+                            INTEGER
+                            
+                        </td>
+                        
+                        <td style="">
+                            
+                            
+                        </td>
+                        
+                        <td style="">
+                            Null
+                            
+                        </td>
+                        
+                    </tr>
+                     
+                
+                    <thead>
+                        <tr>
+                            
+                            
+                            
+                        </tr>
+                    </thead>
+                    
+                    <tr>
+                        
+                        <td style="">
+                             
+                            
+                        </td>
+                        
+                        <td style="">
+                            SECONDARY COOLING ENERGY SOURCE
+                            
+                        </td>
+                        
+                        <td style="">
+                            
+                            
+                                
+                                Represents what type of fuel is used to cool the property. If there is additional equipment in the property cooling the minority of it, this represents the ability to capture the secondary cooling fuel source.  <br>
+                            
+                                
+                                Secondary Cooling Source (links to RealProperty Lookup table, TYPECLASS=COOLINGSOURCE)  <br>
+                            
+                                
+                                 <br>
+                            
+                        </td>
+                        
+                        <td style="">
+                            false
+                            
+                        </td>
+                        
+                        <td style="">
+                            false
+                            
+                        </td>
+                        
+                        <td style="">
+                            
+                            
+                        </td>
+                        
+                        <td style="">
+                            INTEGER
+                            
+                        </td>
+                        
+                        <td style="">
+                            
+                            
+                        </td>
+                        
+                        <td style="">
+                            Null
+                            
+                        </td>
+                        
+                    </tr>
+                     
+                
+                    <thead>
+                        <tr>
+                            
+                            
+                            
+                        </tr>
+                    </thead>
+                    
+                    <tr>
+                        
+                        <td style="">
+                             
+                            
+                        </td>
+                        
+                        <td style="">
+                            PHYSICAL LOCATION STATUS
+                            
+                        </td>
+                        
+                        <td style="">
+                            
+                            
+                                
+                                The status of the Physical Location. Existing represents a used Physical Location whereas Decommissioned represents an unused Physical Location.  <br>
+                            
+                                
+                                Physical Location Status (1 = Existing, 2= Decommission)  <br>
+                            
+                                
+                                 <br>
+                            
+                        </td>
+                        
+                        <td style="">
+                            false
+                            
+                        </td>
+                        
+                        <td style="">
+                            false
+                            
+                        </td>
+                        
+                        <td style="">
+                            
+                            
+                        </td>
+                        
+                        <td style="">
+                            INTEGER
+                            
+                        </td>
+                        
+                        <td style="">
+                            
+                            
+                        </td>
+                        
+                        <td style="">
+                            Not Null
+                            
+                        </td>
+                        
+                    </tr>
+                     
+                
+                    <thead>
+                        <tr>
+                            
+                            
+                            
+                        </tr>
+                    </thead>
+                    
+                    <tr>
+                        
+                        <td style="">
+                             
+                            
+                        </td>
+                        
+                        <td style="">
+                            PHYSICAL LOCATION RENTABLEAREA
+                            
+                        </td>
+                        
+                        <td style="">
+                            
+                            
+                        </td>
+                        
+                        <td style="">
+                            false
+                            
+                        </td>
+                        
+                        <td style="">
+                            false
+                            
+                        </td>
+                        
+                        <td style="">
+                            
+                            
+                        </td>
+                        
+                        <td style="">
+                            DECIMAL(12,4)
+                            
+                        </td>
+                        
+                        <td style="">
+                            
+                            
+                        </td>
+                        
+                        <td style="">
+                            Null
+                            
+                        </td>
+                        
+                    </tr>
+                     
+                
+                    <thead>
+                        <tr>
+                            
+                            
+                            
+                        </tr>
+                    </thead>
+                    
+                    <tr>
+                        
+                        <td style="">
+                             
+                            
+                        </td>
+                        
+                        <td style="">
+                            PHYSICAL LOCATION BARRIERFREE ELEVATOR
+                            
+                        </td>
+                        
+                        <td style="">
+                            
+                            
+                                
+                                Represents whether all Elevators within the Physical Structure are accessible to persons with disabilities.  <br>
+                            
+                                
+                                Barrier Free Elevator (Full/Partial/None), TYPECLASS=BARRIERFREE  <br>
+                            
+                                &nbsp;
+                                 <br>
+                            
+                                
+                                 <br>
+                            
+                        </td>
+                        
+                        <td style="">
+                            false
+                            
+                        </td>
+                        
+                        <td style="">
+                            false
+                            
+                        </td>
+                        
+                        <td style="">
+                            
+                            
+                        </td>
+                        
+                        <td style="">
+                            INTEGER
+                            
+                        </td>
+                        
+                        <td style="">
+                            
+                            
+                        </td>
+                        
+                        <td style="">
+                            Null
+                            
+                        </td>
+                        
+                    </tr>
+                     
+                
+                    <thead>
+                        <tr>
+                            
+                            
+                            
+                        </tr>
+                    </thead>
+                    
+                    <tr>
+                        
+                        <td style="">
+                             
+                            
+                        </td>
+                        
+                        <td style="">
+                            PHYSICAL LOCATION BARRIERFREE ELEVATOR REASON
+                            
+                        </td>
+                        
+                        <td style="">
+                            
+                            
+                        </td>
+                        
+                        <td style="">
+                            false
+                            
+                        </td>
+                        
+                        <td style="">
+                            false
+                            
+                        </td>
+                        
+                        <td style="">
+                            
+                            
+                        </td>
+                        
+                        <td style="">
+                            NVARCHAR(50)
+                            
+                        </td>
+                        
+                        <td style="">
+                            
+                            
+                        </td>
+                        
+                        <td style="">
+                            Null
+                            
+                        </td>
+                        
+                    </tr>
+                     
+                
+                    <thead>
+                        <tr>
+                            
+                            
+                            
+                        </tr>
+                    </thead>
+                    
+                    <tr>
+                        
+                        <td style="">
+                             
+                            
+                        </td>
+                        
+                        <td style="">
+                            BUILDINGACCESS
+                            
+                        </td>
+                        
+                        <td style="">
+                            
+                            
+                        </td>
+                        
+                        <td style="">
+                            false
+                            
+                        </td>
+                        
+                        <td style="">
+                            false
+                            
+                        </td>
+                        
+                        <td style="">
+                            
+                            
+                        </td>
+                        
+                        <td style="">
+                            INTEGER
+                            
+                        </td>
+                        
+                        <td style="">
+                            
+                            
+                        </td>
+                        
+                        <td style="">
+                            Null
+                            
+                        </td>
+                        
+                    </tr>
+                     
+                
+                    <thead>
+                        <tr>
+                            
+                            
+                            
+                        </tr>
+                    </thead>
+                    
+                    <tr>
+                        
+                        <td style="">
+                             
+                            
+                        </td>
+                        
+                        <td style="">
+                            BUILDINGACCESS REASON
+                            
+                        </td>
+                        
+                        <td style="">
+                            
+                            
+                        </td>
+                        
+                        <td style="">
+                            false
+                            
+                        </td>
+                        
+                        <td style="">
+                            false
+                            
+                        </td>
+                        
+                        <td style="">
+                            
+                            
+                        </td>
+                        
+                        <td style="">
+                            NVARCHAR(50)
+                            
+                        </td>
+                        
+                        <td style="">
+                            
+                            
+                        </td>
+                        
+                        <td style="">
+                            Null
+                            
+                        </td>
+                        
+                    </tr>
+                     
+                
+                    <thead>
+                        <tr>
+                            
+                            
+                            
+                        </tr>
+                    </thead>
+                    
+                    <tr>
+                        
+                        <td style="">
+                             
+                            
+                        </td>
+                        
+                        <td style="">
+                            PHYSICAL LOCATION NAME
+                            
+                        </td>
+                        
+                        <td style="">
+                            
+                            
+                                
+                                Represents the name of the Physical Location. This may or may not be the same name as that of the Client Location residing within this Physical Location, ie. Eatons Centre.Physical Location Name  <br>
+                            
+                                &nbsp;
+                                 <br>
+                            
+                                
+                                 <br>
+                            
+                        </td>
+                        
+                        <td style="">
+                            false
+                            
+                        </td>
+                        
+                        <td style="">
+                            false
+                            
+                        </td>
+                        
+                        <td style="">
+                            
+                            
+                        </td>
+                        
+                        <td style="">
+                            NVARCHAR(255)
+                            
+                        </td>
+                        
+                        <td style="">
+                            
+                            
+                        </td>
+                        
+                        <td style="">
+                            Null
+                            
+                        </td>
+                        
+                    </tr>
+                     
+                
+                    <thead>
+                        <tr>
+                            
+                            
+                            
+                        </tr>
+                    </thead>
+                    
+                    <tr>
+                        
+                        <td style="">
+                             
+                            
+                        </td>
+                        
+                        <td style="">
+                            PHYSICAL LOCATION CODE
+                            
+                        </td>
+                        
+                        <td style="">
+                            
+                            
+                                
+                                This represents an internally defined and standardized alphanumeric code represeting the physical structure.Internal Physical Location Code  <br>
+                            
+                                &nbsp;
+                                 <br>
+                            
+                                
+                                 <br>
+                            
+                        </td>
+                        
+                        <td style="">
+                            false
+                            
+                        </td>
+                        
+                        <td style="">
+                            false
+                            
+                        </td>
+                        
+                        <td style="">
+                            
+                            
+                        </td>
+                        
+                        <td style="">
+                            NVARCHAR(20)
+                            
+                        </td>
+                        
+                        <td style="">
+                            
+                            
+                        </td>
+                        
+                        <td style="">
+                            Not Null
+                            
+                        </td>
+                        
+                    </tr>
+                     
+                
+                    <thead>
+                        <tr>
+                            
+                            
+                            
+                        </tr>
+                    </thead>
+                    
+                    <tr>
+                        
+                        <td style="">
+                             
+                            
+                        </td>
+                        
+                        <td style="">
+                            CREATEDBY
+                            
+                        </td>
+                        
+                        <td style="">
+                            
+                            
+                        </td>
+                        
+                        <td style="">
+                            false
+                            
+                        </td>
+                        
+                        <td style="">
+                            false
+                            
+                        </td>
+                        
+                        <td style="">
+                            
+                            
+                        </td>
+                        
+                        <td style="">
+                            NVARCHAR(50)
+                            
+                        </td>
+                        
+                        <td style="">
+                            
+                            
+                        </td>
+                        
+                        <td style="">
+                            Not Null
+                            
+                        </td>
+                        
+                    </tr>
+                     
+                
+                    <thead>
+                        <tr>
+                            
+                            
+                            
+                        </tr>
+                    </thead>
+                    
+                    <tr>
+                        
+                        <td style="">
+                             
+                            
+                        </td>
+                        
+                        <td style="">
+                            CREATEDON
+                            
+                        </td>
+                        
+                        <td style="">
+                            
+                            
+                        </td>
+                        
+                        <td style="">
+                            false
+                            
+                        </td>
+                        
+                        <td style="">
+                            false
+                            
+                        </td>
+                        
+                        <td style="">
+                            
+                            
+                        </td>
+                        
+                        <td style="">
+                            DATETIME DAY TO SECOND
+                            
+                        </td>
+                        
+                        <td style="">
+                            
+                            
+                        </td>
+                        
+                        <td style="">
+                            Not Null
+                            
+                        </td>
+                        
+                    </tr>
+                     
+                
+                    <thead>
+                        <tr>
+                            
+                            
+                            
+                        </tr>
+                    </thead>
+                    
+                    <tr>
+                        
+                        <td style="">
+                             
+                            
+                        </td>
+                        
+                        <td style="">
+                            UPDATEDBY
+                            
+                        </td>
+                        
+                        <td style="">
+                            
+                            
+                        </td>
+                        
+                        <td style="">
+                            false
+                            
+                        </td>
+                        
+                        <td style="">
+                            false
+                            
+                        </td>
+                        
+                        <td style="">
+                            
+                            
+                        </td>
+                        
+                        <td style="">
+                            NVARCHAR(50)
+                            
+                        </td>
+                        
+                        <td style="">
+                            
+                            
+                        </td>
+                        
+                        <td style="">
+                            Null
+                            
+                        </td>
+                        
+                    </tr>
+                     
+                
+                    <thead>
+                        <tr>
+                            
+                            
+                            
+                        </tr>
+                    </thead>
+                    
+                    <tr>
+                        
+                        <td style="">
+                             
+                            
+                        </td>
+                        
+                        <td style="">
+                            UPDATEDON
+                            
+                        </td>
+                        
+                        <td style="">
+                            
+                            
+                        </td>
+                        
+                        <td style="">
+                            false
+                            
+                        </td>
+                        
+                        <td style="">
+                            false
+                            
+                        </td>
+                        
+                        <td style="">
+                            
+                            
+                        </td>
+                        
+                        <td style="">
+                            DATETIME DAY TO SECOND
+                            
+                        </td>
+                        
+                        <td style="">
+                            
+                            
+                        </td>
+                        
+                        <td style="">
+                            Null
+                            
+                        </td>
+                        
+                    </tr>
+                     
+                
+                    <thead>
+                        <tr>
+                            
+                            
+                            
+                        </tr>
+                    </thead>
+                    
+                    <tr>
+                        
+                        <td style="">
+                             
+                            
+                        </td>
+                        
+                        <td style="">
+                            PHYSICAL LOCATION CONSTRUCTION YEAR
+                            
+                        </td>
+                        
+                        <td style="">
+                            
+                            
+                        </td>
+                        
+                        <td style="">
+                            false
+                            
+                        </td>
+                        
+                        <td style="">
+                            false
+                            
+                        </td>
+                        
+                        <td style="">
+                            
+                            
+                        </td>
+                        
+                        <td style="">
+                            NVARCHAR(4)
+                            
+                        </td>
+                        
+                        <td style="">
+                            
+                            
+                        </td>
+                        
+                        <td style="">
+                            Null
+                            
+                        </td>
+                        
+                    </tr>
+                     
+                
+                    <thead>
+                        <tr>
+                            
+                            
+                            
+                        </tr>
+                    </thead>
+                    
+                    <tr>
+                        
+                        <td style="">
+                             
+                            
+                        </td>
+                        
+                        <td style="">
+                            PHYSICAL LOCATION PROPERTY TYPE CODE
+                            
+                        </td>
+                        
+                        <td style="">
+                            
+                            
+                                
+                                Represents the type of Physical Location using industry standard/known terms, ie. Office, Mall, etc. as opposed to Client Location Types  <br>
+                            
+                                
+                                 <br>
+                            
+                        </td>
+                        
+                        <td style="">
+                            false
+                            
+                        </td>
+                        
+                        <td style="">
+                            false
+                            
+                        </td>
+                        
+                        <td style="">
+                            
+                            
+                        </td>
+                        
+                        <td style="">
+                            NVARCHAR(50)
+                            
+                        </td>
+                        
+                        <td style="">
+                            
+                            
+                        </td>
+                        
+                        <td style="">
+                            Null
+                            
+                        </td>
+                        
+                    </tr>
+                     
+                
+                    <thead>
+                        <tr>
+                            
+                            
+                            
+                        </tr>
+                    </thead>
+                    
+                    <tr>
+                        
+                        <td style="">
+                             
+                            
+                        </td>
+                        
+                        <td style="">
+                            PROPERTY MANAGER
+                            
+                        </td>
+                        
+                        <td style="">
+                            
+                            
+                                
+                                Represents the Property Manager for the respective property. For all respective services within the property managed by the Property Management firm, this provides a common field to denote this which other LOBs could utilize.  <br>
+                            
+                                
+                                 <br>
+                            
+                        </td>
+                        
+                        <td style="">
+                            false
+                            
+                        </td>
+                        
+                        <td style="">
+                            false
+                            
+                        </td>
+                        
+                        <td style="">
+                            
+                            
+                        </td>
+                        
+                        <td style="">
+                            NVARCHAR(50)
+                            
+                        </td>
+                        
+                        <td style="">
+                            
+                            
+                        </td>
+                        
+                        <td style="">
+                            Null
+                            
+                        </td>
+                        
+                    </tr>
+                     
+                
+                    <thead>
+                        <tr>
+                            
+                            <th style="background-color: #FFFFFF">
+                                <B></B>
+                            </th>
+                            
+                            
+                            
+                            <th style="">
+                                <b>Key Group Name</b>
+                            </th>
+                            
+                            <th style="">
+                                <b>Definition</b>
+                            </th>
+                            
+                            <th style="">
+                                <b>Logical Only</b>
+                            </th>
+                            
+                            <th style="">
+                                <b>AK ID</b>
+                            </th>
+                            
+                            <th style="">
+                                <b> </b>
+                            </th>
+                            
+                        </tr>
+                    </thead>
+                    
+                    <tr>
+                        
+                        <td style="">
+                             
+                            
+                        </td>
+                        
+                        <td style="">
+                            XPKPHYSICAL LOCATION
+                            
+                        </td>
+                        
+                        <td style="">
+                            
+                            
+                        </td>
+                        
+                        <td style="">
+                            
+                            
+                        </td>
+                        
+                        <td style="">
+                            PK
+                            
+                        </td>
+                        
+                    </tr>
+                     
+                
+                    <thead>
+                        <tr>
+                            
+                            <th style="background-color: #FFFFFF">
+                                <B></B>
+                            </th>
+                            
+                            <th style="background-color: #FFFFFF">
+                                <B></B>
+                            </th>
+                            
+                            
+                            
+                            <th style="">
+                                <b>Member Name</b>
+                            </th>
+                            
+                            <th style="">
+                                <b>Attribute</b>
+                            </th>
+                            
+                            <th style="">
+                                <b>Logical Only</b>
+                            </th>
+                            
+                        </tr>
+                    </thead>
+                    
+                    <tr>
+                        
+                        <td style="">
+                             
+                            
+                        </td>
+                        
+                        <td style="">
+                             
+                            
+                        </td>
+                        
+                        <td style="">
+                            PHYSICAL LOCATION IDENTITY
+                            
+                        </td>
+                        
+                        <td style="">
+                            PHYSICAL LOCATION IDENTITY
+                            
+                        </td>
+                        
+                        <td style="">
+                            
+                            
+                        </td>
+                        
+                    </tr>
+                     
+                
+                    <thead>
+                        <tr>
+                            
+                            
+                            
+                        </tr>
+                    </thead>
+                    
+                    <tr>
+                        
+                        <td style="">
+                             
+                            
+                        </td>
+                        
+                        <td style="">
+                            XIF1PHYSICAL LOCATION
+                            
+                        </td>
+                        
+                        <td style="">
+                            
+                            
+                        </td>
+                        
+                        <td style="">
+                            
+                            
+                        </td>
+                        
+                        <td style="">
+                            IF1
+                            
+                        </td>
+                        
+                    </tr>
+                     
+                
+                    <thead>
+                        <tr>
+                            
+                            <th style="background-color: #FFFFFF">
+                                <B></B>
+                            </th>
+                            
+                            <th style="background-color: #FFFFFF">
+                                <B></B>
+                            </th>
+                            
+                            
+                            
+                            <th style="">
+                                <b>Member Name</b>
+                            </th>
+                            
+                            <th style="">
+                                <b>Attribute</b>
+                            </th>
+                            
+                            <th style="">
+                                <b>Logical Only</b>
+                            </th>
+                            
+                        </tr>
+                    </thead>
+                    
+                    <tr>
+                        
+                        <td style="">
+                             
+                            
+                        </td>
+                        
+                        <td style="">
+                             
+                            
+                        </td>
+                        
+                        <td style="">
+                            PHYSICAL LOCATION TIMEZONE IDENTITY
+                            
+                        </td>
+                        
+                        <td style="">
+                            PHYSICAL LOCATION TIMEZONE IDENTITY
+                            
+                        </td>
+                        
+                        <td style="">
+                            
+                            
+                        </td>
+                        
+                    </tr>
+                     
+                
+                    <thead>
+                        <tr>
+                            
+                            <th style="background-color: #FFFFFF">
+                                <B></B>
+                            </th>
+                            
+                            
+                            
+                            <th style="">
+                                <b> </b>
+                            </th>
+                            
+                        </tr>
+                    </thead>
+                    
+                    <tr>
+                        
+                        <td style="">
+                             
+                            
+                        </td>
+                        
+                    </tr>
+                     
+                
+                    <thead>
+                        <tr>
+                            
+                            <th style="background-color: #FFFFFF">
+                                <B></B>
+                            </th>
+                            
+                            <th style="background-color: #FFFFFF">
+                                <B></B>
+                            </th>
+                            
+                            
+                            
+                            <th style="">
+                                <b>Relationship Name</b>
+                            </th>
+                            
+                            <th style="">
+                                <b>Attribute Rolename</b>
+                            </th>
+                            
+                            <th style="">
+                                <b>Cardinality</b>
+                            </th>
+                            
+                            <th style="">
+                                <b>Logical Only</b>
+                            </th>
+                            
+                        </tr>
+                    </thead>
+                    
+                    <tr>
+                        
+                        <td style="">
+                             
+                            
+                        </td>
+                        
+                        <td style="">
+                             
+                            
+                        </td>
+                        
+                        <td style="">
+                            R/112
+                            
+                        </td>
+                        
+                        <td style="">
+                            
+                            
+                        </td>
+                        
+                        <td style="">
+                            Zero, One or More
+                            
+                        </td>
+                        
+                        <td style="">
+                            
+                            
+                        </td>
+                        
+                    </tr>
+                     
+                
+                    <thead>
+                        <tr>
+                            
+                            <th style="background-color: #FFFFFF">
+                                <B></B>
+                            </th>
+                            
+                            
+                            
+                            <th style="">
+                                <b> </b>
+                            </th>
+                            
+                        </tr>
+                    </thead>
+                    
+                    <tr>
+                        
+                        <td style="">
+                             
+                            
+                        </td>
+                        
+                    </tr>
+                     
+                
+                    <thead>
+                        <tr>
+                            
+                            <th style="background-color: #FFFFFF">
+                                <B></B>
+                            </th>
+                            
+                            <th style="background-color: #FFFFFF">
+                                <B></B>
+                            </th>
+                            
+                            
+                            
+                            <th style="">
+                                <b>Relationship Name</b>
+                            </th>
+                            
+                            <th style="">
+                                <b>Attribute Rolename</b>
+                            </th>
+                            
+                            <th style="">
+                                <b>Cardinality</b>
+                            </th>
+                            
+                        </tr>
+                    </thead>
+                    
+                    <tr>
+                        
+                        <td style="">
+                             
+                            
+                        </td>
+                        
+                        <td style="">
+                             
+                            
+                        </td>
+                        
+                        <td style="">
+                            R/27
+                            
+                        </td>
+                        
+                        <td style="">
+                            
+                            
+                        </td>
+                        
+                        <td style="">
+                            Zero, One or More
+                            
+                        </td>
+                        
+                    </tr>
+                     
+                
+                    <thead>
+                        <tr>
+                            
+                            
+                            
+                        </tr>
+                    </thead>
+                    
+                    <tr>
+                        
+                        <td style="">
+                             
+                            
+                        </td>
+                        
+                        <td style="">
+                             
+                            
+                        </td>
+                        
+                        <td style="">
+                            R/28
+                            
+                        </td>
+                        
+                        <td style="">
+                            
+                            
+                        </td>
+                        
+                        <td style="">
+                            Zero or One (Z)
+                            
+                        </td>
+                        
+                    </tr>
+                     
+                
+                    <thead>
+                        <tr>
+                            
+                            
+                            
+                        </tr>
+                    </thead>
+                    
+                    <tr>
+                        
+                        <td style="">
+                             
+                            
+                        </td>
+                        
+                        <td style="">
+                             
+                            
+                        </td>
+                        
+                        <td style="">
+                            R/104
+                            
+                        </td>
+                        
+                        <td style="">
+                            
+                            
+                        </td>
+                        
+                        <td style="">
+                            Zero, One or More
+                            
+                        </td>
+                        
+                    </tr>
+                     
+                
+                <caption></caption>
+                </table>
+            </div>
+            <div id="footer" style="float: right"><p>Author : </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
